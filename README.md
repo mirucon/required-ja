@@ -129,14 +129,14 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
     * searchform.php (via [get_search_form()](https://codex.wordpress.org/Function_Reference/get_search_form)).
 
 * *If you use the relevant templates*, your theme should include:
-    * [wp_head()](https://developer.wordpress.org/reference/functions/wp_head) – (immediately before </head>).
-    * [body_class()](https://developer.wordpress.org/reference/functions/body_class) – (inside <body> tag).
+    * [wp_head()](https://developer.wordpress.org/reference/functions/wp_head) – (immediately before &lt;/head&gt;).
+    * [body_class()](https://developer.wordpress.org/reference/functions/body_class) – (inside &lt;body&gt; tag).
     * [$content_width.](https://codex.wordpress.org/Content_Width)
     * [post_class()](https://developer.wordpress.org/reference/functions/post_class).
     * [wp_link_pages()](https://developer.wordpress.org/reference/functions/wp_link_pages).
     * [the_comments_navigation()](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the_comments_pagination()](https://developer.wordpress.org/reference/functions/the_comments_pagination/).
     * [the_posts_pagination()](https://developer.wordpress.org/reference/functions/the_posts_pagination/), [the_posts_navigation()](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
-    * [wp_footer()](https://developer.wordpress.org/reference/functions/wp_footer) – (immediately before </body>).
+    * [wp_footer()](https://developer.wordpress.org/reference/functions/wp_footer) – (immediately before &lt;/body&gt;).
 
 * Custom template files should be called using [get_template_part()](https://developer.wordpress.org/reference/functions/get_template_part/) or [locate_template()](https://developer.wordpress.org/reference/functions/locate_template/).
 * Display the correct content according to the front page setting. ([See explanation](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))

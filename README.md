@@ -1,10 +1,14 @@
-WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。(最終更新 : 2017/09/24)
+(最終更新 : 2017/09/25)
+
+WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
+
+---
 
 テーマが WordPress.org の公式レポジトリに掲載されるためには、以下の必須事項すべてを満たしている必要があります。
 
-5個以上の明確な問題があるテーマは not-approved としてチケットがクローズされることがありますが、問題を修正したあとにもう一度テーマを提出することが出来ます。
+5個以上の明確な問題があるテーマは not-approved としてチケットがクローズされることがあります。その場合でも問題を修正したあとにもう一度テーマを提出することは出来ます。
 
-これらのチェックに加えて [Theme Check](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を使用してテーマをテストする必要があります。テーマチェックが何をチェックしているかは [こちら](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) から確認できます。
+これらのチェックに加えて [Theme Check プラグイン](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を使用してテーマをテストする必要があります。テーマチェックが何をチェックしているかは [こちら (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) から確認できます。
 
 ## アクセシビリティ - Accessibility
 
@@ -34,14 +38,22 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
   * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
 
 * WordPress のコアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
+
 * WordPres 機能に対して有料でしか使えないようにする制限をかけないこと
-* Avoid hard coding to modify content. Instead, use function parameters, filters and action hooks where appropriate. For example [wp_title](https://developer.wordpress.org/reference/functions/wp_title/) should be modified using a [filter](https://developer.wordpress.org/reference/hooks/wp_title/).
-* Able to have child themes made from them. (Child theme ready)
-* The [theme tags](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) in style.css and description must match what the theme actually does in respect to functionality and design. Don’t use more than 3 subject tags (See: [Theme Tag List](https://make.wordpress.org/themes/handbook/review/required/theme-tags/)).
-* Use [template tags](https://codex.wordpress.org/Template_Tags) and action/filter hooks properly.
-* Include comments.php (via [comments_template()](https://codex.wordpress.org/Function_Reference/comments_template)).
-* Themes may be backwards compatible, but only for 3 major WordPress versions (version 4.5 if 4.8 is latest).
-* Themes should not remove, hide, or otherwise block the admin bar from appearing.
+
+* 何かを編集する際のハードコードをさけること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
+
+* チャイルドテーマが提出するテーマからきちんと作れ使用できるようになっていること (Child theme ready)
+
+* style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
+
+* 正しい[テンプレートタグ](http://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0)・アクションフック・フィルターフックを使用すること
+
+* comments.php を含めること ([comments_template()](https://wpdocs.osdn.jp/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0/comments_template) を使います)
+
+* テーマに後方互換性をつけることも出来ますが、3つのメジャーバージョンだけで十分です (4.8が最新であれば4.5)。
+
+* 管理バーを削除や非表示、隠すことをしないこと
 
 ## Presentation vs Functionality
 
@@ -143,4 +155,4 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 **It’s worth noting we are working to automate a lot of the above requirements.**
 
-Along with the required items, you should also consider the **[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended") **The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.
+Along with the required items, you should also consider the **[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.

@@ -53,9 +53,9 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * テーマに後方互換性をつけることも出来ますが、3つのメジャーバージョンだけで十分です (4.8が最新であれば4.5)。
 
-* 管理バーを削除や非表示、隠すことをしないこと
+* 管理バーを隠したり削除したり非表示にしないこと
 
-## Presentation vs Functionality
+## 表示 vs 機能性 - Presentation vs Functionality
 
 * The theme options should not be pseudo custom post types and save non-trivial user data.
 * Non-design related functionality is not allowed. (See: [Plugin territory examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
@@ -113,7 +113,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * Don’t phone home without informed user consent. Make any collection of user data “opt-in” only and have a theme option that is set to disabled by default.
 * No URL shorteners used in the theme.
 
-## Selling, credits and links
+## 販売・クレジットとリンク - Selling, credits and links
 
 * Theme URI is optional.
 * If used, it must be about the theme we’re hosting on WordPress.org.

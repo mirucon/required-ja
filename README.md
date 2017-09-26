@@ -27,7 +27,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/)を使うこと。
   以下の WordPress の機能性をサポートする必要があります :
-  
+
   * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
   * [サイドバー (英語)](https://developer.wordpress.org/themes/functionality/sidebars/)
   * [ナビゲーションメニュー (英語)](https://developer.wordpress.org/themes/functionality/navigation-menus/)
@@ -67,10 +67,10 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 言語 - Language
 
-* All theme text strings are to be translatable.
-* Include a text domain in style.css.
-* Use a single unique theme slug – as the theme slug appears in style.css. If it uses a framework then no more than 2 unique slugs.
-* Can use any language for text, but only use the same one for all text.
+* 全てのテーマにおける文字列は翻訳できる状態にする
+* style.cssにテキストドメインを記載する
+* style.cssで使っているようなユニークなテーマスラッグを使うこと。もしフレームワークを使っている場合には2つ以上のユニークなスラッグを使うこと。
+* どんな言語でもテキストに利用することができますが、全てのテキストは同じ言語で統一すること。
 
 ## ライセンス - Licensing
 

@@ -1,4 +1,4 @@
-(最終更新 : 2017/09/25)
+(最終更新 : 2017/09/26)
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
@@ -55,24 +55,27 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 管理バーを隠したり削除したり非表示にしないこと
 
-## 表示 vs 機能性 - Presentation vs Functionality
+## 見た目 vs 機能性 - Presentation vs Functionality
 
-* テーマのオプションは擬似的なカスタム投稿タイプであってはならず、また、重要なユーザーデータを保存してはいけません。
+* テーマのオプションを擬似的なカスタム投稿タイプにしないこと。また、重要なユーザーデータを保存してはいけません。
 
-* デザインに関連しない機能はテーマに含めてはいけません（訳者注：そういった機能はプラグインで提供しましょう）。([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+* デザインに関連しない機能をテーマに含めないこと（訳者注：そういった機能はプラグインで提供しましょう）。([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
 
-* デモのコンテンツを使用して、オプションの仕組みをユーザーに表示することができます。プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/)、既存のコンテンツ、またはインストール手順を使用してください。インストール手順は、サイトへの訪問者ではなく edit_theme_options 機能を持つユーザーのみが見ることができます。
+* デモのコンテンツを使用してオプションの仕組みをユーザーに表示することはできますが、プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/) や既存のコンテンツ、インストール手順を使用してください。インストール手順はサイトの訪問者には表示させないようにし、edit_theme_options 権限を持つユーザーへのみ表示させるようにするべきです。
 
 ## ドキュメンテーション - Documentation
 
-* テーマが有するすべてのカスタム機能、テンプレート、オプション、または制限事項（メニュー制限など）について説明が必須です。これに関する十分なドキュメントが提供されなければなりません。
+* テーマが有するすべてのカスタム機能、テンプレート、オプションや制限事項 (メニュー制限など) へは説明を用意すること。これらに関する十分なドキュメントが提供されているべきです。
 
 ## 言語 - Language
 
-* 全てのテーマにおける文字列は翻訳できる状態にする
-* style.cssにテキストドメインを記載する
-* style.cssで使っているようなユニークなテーマスラッグを使うこと。もしフレームワークを使っている場合には2つ以上のユニークなスラッグを使うこと。
-* どんな言語でもテキストに利用することができますが、全てのテキストは同じ言語で統一すること。
+* テーマにおけるすべての文字列は翻訳できる状態にすること (訳者注 : [i18n for WordPress Developers (日本語 Codex)](https://wpdocs.osdn.jp/I18n_for_WordPress_Developers) を参照)
+
+* style.css 内にテキストドメインを記載すること
+
+* style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使っている場合でも3つ以上のスラッグを使うことは出来ません。
+
+* テキストする言語を同じ言語で統一すること (テキストにはどの言語も使用可能です)
 
 ## ライセンス - Licensing
 

@@ -58,7 +58,9 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 ## 表示 vs 機能性 - Presentation vs Functionality
 
 * テーマのオプションは擬似的なカスタム投稿タイプであってはならず、また、重要なユーザーデータを保存してはいけません。
+
 * デザインに関連しない機能はテーマに含めてはいけません（訳者注：そういった機能はプラグインで提供しましょう）。 ([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+
 * デモのコンテンツを使用して、オプションの仕組みをユーザーに表示することができます。 プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/)、既存のコンテンツ、またはインストール手順を使用してください。 インストール手順は、サイトへの訪問者ではなくedit_theme_options機能を持つユーザーのみが見ることができます。
 
 ## ドキュメンテーション - Documentation

@@ -106,18 +106,18 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## プラグイン - Plugins
 
-* Themes cannot include plugins.
-* Themes cannot require plugins to work.
-* Themes may only recommend plugins that are available in the WordPress.org Plugin Directory.
-* Themes may use [TGM Plugin Activation](http://tgmpluginactivation.com/) to recommend plugins.
-* Themes may include libraries such as option frameworks (these must pass the requirements).
+* テーマの中にプラグイン機能を含むことはできません。
+* テーマを使うためにプラグインを必須とする事はNGです。
+* テーマは、WordPress.orgのプラグインディレクトリにあるプラグインを、推薦することはできます。
+* テーマ内において、プラグインを推薦する目的で[TGM Plugin Activation](http://tgmpluginactivation.com/)を使うことができます。
+* テーマは、オプション・フレームワークのようなライブラリ（要件を満たしたものに限る）を含むことができます。
 
 ## スクリーンショット - Screenshot
 
-* The screenshot should be a reasonable representation of what the theme can look like.
-* The screenshot may optionally show supported plugins, settings and templates.
-* The screenshot should not be a logo or mockup.
-* The screenshot should be no bigger than 1200 x 900px.
+* スクリーンショットは、テーマが画面でどう見えるのかを適切に表現していなければなりません。
+* スクリーンショットは、サポートされているプラグイン、設定とテンプレートを任意に示すことができます。
+* スクリーンショットは、ロゴやモックアップであってはいけません。
+* スクリーンショットは、1200 x 900px より大きくてはいけません。
 
 ## プライバシー - Privacy
 

@@ -132,19 +132,28 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 ## プライバシー - Privacy
 
 * Don’t phone home without informed user consent. Make any collection of user data “opt-in” only and have a theme option that is set to disabled by default.
+
 * No URL shorteners used in the theme.
 
 ## 販売・クレジットとリンク - Selling, credits and links
 
-* Theme URI is optional.
-* If used, it must be about the theme we’re hosting on WordPress.org.
-* If the URI is a demo site, the content must be about the theme itself and not test data.
-* Using WordPress.org in the Theme URI is reserved for official themes.
-* Author URI is optional. If used it is required to link to an author’s personal website or project/development website.
-* Themes may have a single footer credit link, which is restricted to the Theme URI or Author URI defined in style.css.
-* Themes may also have an additional footer credit link pointing to WordPress.org.
+* Theme URI は任意の事項です。
+
+* 使用する場合、WordPress.org 上でホスティングされているテーマに関するもの (訳注 : 「申請しこれから .org 上にホスティングされるテーマ」の意) にリンクすること。
+
+* リンク先がデモサイトの場合、そのコンテンツはテーマ自身に関することにし、テストデータにしないこと。
+
+* Theme URI に WordPress.org を使わないこと。これの使用は公式テーマ用に予約されています。
+
+* Author URI は任意の事項です。使用する場合、テーマ作者の個人 Web サイト、プロジェクトもしくは開発用の Web サイトにリンクすること。
+
+* フッタークレジットには一つのリンクのみを使用すること。またそのリンクは style.css 内に記述された Theme URI もしくは Author URI であること。
+
+* ただし WordPress.org へのリンクはいつでも使用することが出来ます (訳注 : これは上記の「一つのリンク」にはカウントされません)。
+
 * If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
-* Themes should not display “obtrusive” upselling. [Examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links).
+
+* 見苦しすぎるほどのテーマの宣伝を表示しないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
 ## スタイルシートとスクリプト - Stylesheets and Scripts
 

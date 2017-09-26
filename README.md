@@ -99,10 +99,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## オプションと設定 - Options and Settings
 
-* [Use the Customizer for implementing theme options](https://make.wordpress.org/themes/2015/04/22/details-on-the-new-theme-settings-customizer-guideline/)
-* Save options in a single array.
-* Use [sane defaults](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) and don’t write default setting values to the database.
-* Use edit_theme_options capability for determining user permission to edit options, rather than rely on a role (e.g. “administrator”), or a different capability (e.g. “edit_themes”, “manage_options”).
+* テーマオプションを実装するには [テーマカスタマイザー (英語)](https://make.wordpress.org/themes/2015/04/22/details-on-the-new-theme-settings-customizer-guideline/) を使うこと。
+
+* オプションは一つの配列に保存すること。
+
+* [常識的なデフォルト値 (英語)](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) を使い、デフォルト設定はデータベース内に書かないこと。
+
+* 設定を編集できるユーザーを判別するには edit\_theme\_options 権限を使うこと。管理者のような権限グループや他の権限 (edit\_themes や manage\_options) よりもそちらが好ましいです。
 
 ## プラグイン - Plugins
 

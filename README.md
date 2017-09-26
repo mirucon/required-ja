@@ -43,7 +43,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * コンテンツを編集できるようにするため、ハードコード（訳者注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
 
-* チャイルドテーマが提出するテーマからきちんと作れて、かつ使用できるようになっていること (Child theme ready)
+* 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること (Child theme ready)
 
 * style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
 
@@ -57,9 +57,9 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 表示 vs 機能性 - Presentation vs Functionality
 
-* The theme options should not be pseudo custom post types and save non-trivial user data.
-* Non-design related functionality is not allowed. (See: [Plugin territory examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
-* Demo content may be used to show the user how the options work. Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the edit_theme_options capability, not to visitors.
+* テーマのオプションは擬似的なカスタム投稿タイプであってはならず、また、重要なユーザーデータを保存してはいけません。
+* デザインに関連しない機能はテーマに含めてはいけません（訳者注：そういった機能はプラグインで提供しましょう）。 ([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+* デモのコンテンツを使用して、オプションの仕組みをユーザーに表示することができます。 プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/)、既存のコンテンツ、またはインストール手順を使用してください。 インストール手順は、サイトへの訪問者ではなくedit_theme_options機能を持つユーザーのみが見ることができます。
 
 ## ドキュメンテーション - Documentation
 

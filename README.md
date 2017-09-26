@@ -69,10 +69,10 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 言語 - Language
 
-* All theme text strings are to be translatable.
-* Include a text domain in style.css.
-* Use a single unique theme slug – as the theme slug appears in style.css. If it uses a framework then no more than 2 unique slugs.
-* Can use any language for text, but only use the same one for all text.
+* 全てのテーマにおける文字列は翻訳できる状態にする
+* style.cssにテキストドメインを記載する
+* style.cssで使っているようなユニークなテーマスラッグを使うこと。もしフレームワークを使っている場合には2つ以上のユニークなスラッグを使うこと。
+* どんな言語でもテキストに利用することができますが、全てのテキストは同じ言語で統一すること。
 
 ## ライセンス - Licensing
 

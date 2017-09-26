@@ -63,7 +63,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## ドキュメンテーション - Documentation
 
-* Any custom features, templates, options or any limitations (for example menu restrictions), should be explained. Enough documentation should be provided.
+* テーマが有するすべてのカスタム機能、テンプレート、オプション、または制限事項（メニュー制限など）について説明が必須です。これに関する十分なドキュメントが提供されなければなりません。
 
 ## 言語 - Language
 

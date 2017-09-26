@@ -97,11 +97,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## プラグイン - Plugins
 
-* Themes cannot include plugins.
-* Themes cannot require plugins to work.
-* Themes may only recommend plugins that are available in the WordPress.org Plugin Directory.
-* Themes may use [TGM Plugin Activation](http://tgmpluginactivation.com/) to recommend plugins.
-* Themes may include libraries such as option frameworks (these must pass the requirements).
+* テーマの中にプラグイン機能を含むことはできません。
+* テーマを使うためにプラグインを必須とする事はNGです。
+* テーマは、WordPress.orgのプラグインディレクトリにあるプラグインを、推薦することはできます。
+* テーマ内において、プラグインを推薦する目的で[TGM Plugin Activation](http://tgmpluginactivation.com/)を使うことができます。
+* テーマは、オプション・フレームワークのようなライブラリ（要件を満たしたものに限る）を含むことができます。
 
 ## スクリーンショット - Screenshot
 

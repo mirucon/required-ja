@@ -75,21 +75,27 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使っている場合でも3つ以上のスラッグを使うことは出来ません。
 
-* テキストする言語を同じ言語で統一すること (テキストにはどの言語も使用可能です)
+* テキストに使用する言語を一つの言語で統一すること (どの言語も使用可能です)
 
 ## ライセンス - Licensing
 
-* Be 100% GPL and/or [100% GPL-compatible](https://make.wordpress.org/themes/handbook/review/resources/#licenses-bundled-resources) licensed.
-* Declare copyright and license explicitly. Use the license and license uri header slugs to style.css.
-* Declare licenses of any resources included such as fonts or images.
-* All code and design should be your own or legally yours. Cloning of designs is not acceptable.
-* Any copyright statements on the front end should display the user’s copyright, not the theme author’s copyright.
+* 100% GPL ライセンス、もしくは [100% GPL 互換ライセンス (英語)](https://make.wordpress.org/themes/handbook/review/resources/#licenses-bundled-resources) になっていること。
+
+* コピーライトとライセンスを明確にすること。style.css 内の "license" と "license uri" を使用します。
+
+* 同梱されているすべてのリソース、例えばフォントや画像などのライセンスを明確にすること。
+
+* すべてのコードとデザインが自分自身のもの、もしくは法律上自分の所有物となっているものであること。他のデザインのコピーやクローンをすることは出来ません。
+
+* フロントエンドに表示されるコピーライトがテーマ作者のコピーライトではなく、使用しているユーザーのものになっていること。
 
 ## 名前付け - Naming
 
-* Theme names must not use: WordPress, Theme.
-* Child themes should not include the name of the parent theme unless the themes have the same author.
-* Spell “WordPress” correctly in all public facing text: all one word, with both an uppercase W and P.
+* "WordPress" 及び "Theme" をテーマ名に使用しないこと。
+
+* 子テーマの名前に親テーマの名前を含まれないこと (子テーマと親テーマの制作者が同じの場合を除く)。
+
+* フロントエンドに表示される場所で正しい"WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟みません。
 
 ## オプションと設定 - Options and Settings
 

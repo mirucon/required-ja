@@ -27,7 +27,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/)を使うこと。
   以下の WordPress の機能性をサポートする必要があります :
-  
+
   * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
   * [サイドバー (英語)](https://developer.wordpress.org/themes/functionality/sidebars/)
   * [ナビゲーションメニュー (英語)](https://developer.wordpress.org/themes/functionality/navigation-menus/)
@@ -39,11 +39,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * WordPress のコアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
 
-* WordPres 機能に対して有料でしか使えないようにする制限をかけないこと
+* WordPress の機能に対して有料でしか使えないようにする制限をかけないこと
 
-* 何かを編集する際のハードコードをさけること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
+* コンテンツを編集できるようにするため、ハードコード（訳者注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
 
-* チャイルドテーマが提出するテーマからきちんと作れ使用できるようになっていること (Child theme ready)
+* チャイルドテーマが提出するテーマからきちんと作れて、かつ使用できるようになっていること (Child theme ready)
 
 * style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
 

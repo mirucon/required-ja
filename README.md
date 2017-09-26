@@ -105,10 +105,10 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## スクリーンショット - Screenshot
 
-* The screenshot should be a reasonable representation of what the theme can look like.
-* The screenshot may optionally show supported plugins, settings and templates.
-* The screenshot should not be a logo or mockup.
-* The screenshot should be no bigger than 1200 x 900px.
+* スクリーンショットは、テーマが画面でどう見えるのかを適切に表現でなければなりません。
+* スクリーンショットは、サポートされているプラグイン、設定とテンプレートを任意に示すことができます。
+* スクリーンショットは、ロゴやモックアップであってはいけません。
+* スクリーンショットは、1200のx 900pxより大きくてはいけません。
 
 ## プライバシー - Privacy
 

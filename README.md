@@ -202,3 +202,17 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 **It’s worth noting we are working to automate a lot of the above requirements.**
 
 上記の必須項目だけでなく、 **[推奨項目 （英語）](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮されなければなりません。この推奨項目は、あなたのテーマが最高のものとなり、ベストプラクティスとして含めるべき良いアドバイスとなります。
+
+## 参照 - References
+
+### プラグインテリトリー
+
+* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ | Firegoby](https://firegoby.jp/archives/5975)
+
+* [Pluginテリトリーについて // Speaker Deck](https://speakerdeck.com/oleindesign/pluginteritorinituite)
+
+### 100% GPL ライセンス
+
+* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 | WP-D](https://wp-d.org/2013/03/01/3075/)
+
+* [GPL: WordPress 4つの自由と ビジネスモデル / WordCamp Tokyo 2015 講演スライド](https://www.slideshare.net/NSKW/gpl-wordpress-4-wordcamp-tokyo-2015)

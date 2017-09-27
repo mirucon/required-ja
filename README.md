@@ -167,25 +167,38 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## テンプレート - Templates
 
-* *If used in the theme*, standard template files are required to be called by their respective function:
-    * header.php (via [get_header()](https://codex.wordpress.org/Function_Reference/get_header)).
-    * footer.php (via [get_footer()](https://codex.wordpress.org/Function_Reference/get_footer)).
-    * sidebar.php (via [get_sidebar()](https://codex.wordpress.org/Function_Reference/get_sidebar)).
-    * searchform.php (via [get_search_form()](https://codex.wordpress.org/Function_Reference/get_search_form)).
+* *テーマで使用される場合*、下記の標準のテンプレートファイルはそれぞれの関数によって呼び出されること:
 
-* *If you use the relevant templates*, your theme should include:
-    * [wp_head()](https://developer.wordpress.org/reference/functions/wp_head) – (immediately before &lt;/head&gt;).
-    * [body_class()](https://developer.wordpress.org/reference/functions/body_class) – (inside &lt;body&gt; tag).
-    * [$content_width.](https://codex.wordpress.org/Content_Width)
-    * [post_class()](https://developer.wordpress.org/reference/functions/post_class).
-    * [wp_link_pages()](https://developer.wordpress.org/reference/functions/wp_link_pages).
-    * [the_comments_navigation()](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the_comments_pagination()](https://developer.wordpress.org/reference/functions/the_comments_pagination/).
-    * [the_posts_pagination()](https://developer.wordpress.org/reference/functions/the_posts_pagination/), [the_posts_navigation()](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
-    * [wp_footer()](https://developer.wordpress.org/reference/functions/wp_footer) – (immediately before &lt;/body&gt;).
+    * header.php ([get_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)).
 
-* Custom template files should be called using [get_template_part()](https://developer.wordpress.org/reference/functions/get_template_part/) or [locate_template()](https://developer.wordpress.org/reference/functions/locate_template/).
-* Display the correct content according to the front page setting. ([See explanation](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))
+    * footer.php ([get_footer()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_footer)).
+
+    * sidebar.php ([get_sidebar()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_sidebar)).
+
+    * searchform.php ([get_search_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)).
+
+* *関連するテンプレートを使用する場合*は、テーマに下記の関数・テンプレートタグなどを含めること:
+
+    * [wp_head()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_head) – (&lt;/head&gt; の直前).
+
+    * [body_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/body_class) – (&lt;body&gt; tag に含める).
+
+    * [$content_width （訳注：コンテンツ幅）](https://wpdocs.osdn.jp/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%B9%85)
+
+    * [post_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/post_class)
+
+    * [wp_link_pages()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_link_pages).
+
+    * [the_comments_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the_comments_pagination() (英語)](https://developer.wordpress.org/reference/functions/the_comments_pagination/)
+
+    * [the_posts_pagination()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/the_posts_pagination),  [the_posts_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
+
+    * [wp_footer()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_footer) – (&lt;/body&gt; の直前).
+
+* カスタムテンプレートファイルは [get_template_part()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_template_part) か、または [locate_template()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/locate_template) を使って呼び出されること
+
+* フロントページの設定に従って正しい内容が表示されること ([参照 （英語）](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))
 
 **It’s worth noting we are working to automate a lot of the above requirements.**
 
-Along with the required items, you should also consider the **[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.
+上記の必須項目だけでなく、 **[推奨項目 （英語）](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮されなければなりません。この推奨項目は、あなたのテーマが最高のものとなり、ベストプラクティスとして含めるべき良いアドバイスとなります。

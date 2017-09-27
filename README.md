@@ -1,4 +1,4 @@
-(最終更新 : 2017/09/26)
+(最終更新 : 2017/09/27)
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
@@ -133,7 +133,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * Don’t phone home without informed user consent. Make any collection of user data “opt-in” only and have a theme option that is set to disabled by default.
 
-* No URL shorteners used in the theme.
+* 短縮 URL をテーマ内で使わないこと。
 
 ## 販売・クレジットとリンク - Selling, credits and links
 
@@ -167,41 +167,41 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## テンプレート - Templates
 
-* *テーマで使用される場合*、下記の標準のテンプレートファイルはそれぞれの関数によって呼び出されること:
+* **テーマ内で使用する場合**、下記の標準のテンプレートファイルをそれぞれの関数によって呼び出すこと:
 
-    * header.php ([get_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)).
+    * header.php - [get_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)
 
-    * footer.php ([get_footer()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_footer)).
+    * footer.php - [get_footer()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_footer)
 
-    * sidebar.php ([get_sidebar()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_sidebar)).
+    * sidebar.php - [get_sidebar()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_sidebar)
 
-    * searchform.php ([get_search_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)).
+    * searchform.php - [get_search_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)
 
-* *関連するテンプレートを使用する場合*は、テーマに下記の関数・テンプレートタグなどを含めること:
+* **関連テンプレートを使用する場合**、テーマに下記の関数・テンプレートタグなどを含めること:
 
-    * [wp_head()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_head) – (&lt;/head&gt; の直前).
+    * [wp_head()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_head) - &lt;/head&gt; の直前
 
-    * [body_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/body_class) – (&lt;body&gt; tag に含める).
+    * [body_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/body_class) - &lt;body&gt; タグ内に含める
 
     * [$content_width （訳注：コンテンツ幅）](https://wpdocs.osdn.jp/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%B9%85)
 
-    * [post_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/post_class)
+    * [post\_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/post_class)
 
-    * [wp_link_pages()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_link_pages).
+    * [wp\_link\_pages()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_link_pages)
 
-    * [the_comments_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the_comments_pagination() (英語)](https://developer.wordpress.org/reference/functions/the_comments_pagination/)
+    * [the\_comments\_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the\_comments\_pagination() (英語)](https://developer.wordpress.org/reference/functions/the_comments_pagination/)
 
-    * [the_posts_pagination()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/the_posts_pagination),  [the_posts_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
+    * [the\_posts\_pagination()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/the_posts_pagination),  [the\_posts\_navigation() (英語)](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
 
-    * [wp_footer()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_footer) – (&lt;/body&gt; の直前).
+    * [wp_footer()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_footer) – &lt;/body&gt; の直前
 
-* カスタムテンプレートファイルは [get_template_part()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_template_part) か、または [locate_template()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/locate_template) を使って呼び出されること
+* カスタムテンプレートファイルは [get\_template\_part()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_template_part) もしくは [locate_template()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/locate_template) を使って呼び出すこと。
 
-* フロントページの設定に従って正しい内容が表示されること ([参照 （英語）](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))
+* フロントページの設定に従って正しい内容が表示されること ([参照 （英語）](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))。
 
-**It’s worth noting we are working to automate a lot of the above requirements.**
+**テーマレビューチームは現在これらの必須項目のチェックを自動化しようとしています。**
 
-上記の必須項目だけでなく、 **[推奨項目 （英語）](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮されなければなりません。この推奨項目は、あなたのテーマが最高のものとなり、ベストプラクティスとして含めるべき良いアドバイスとなります。
+上記の必須項目に加えて  **[推奨項目 (英語)](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮するべきです。推奨項目はテーマがより良いものになるようなベストプラクティスとして含めるべきアドバイスです。
 
 ## 参照 - References
 

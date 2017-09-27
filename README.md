@@ -41,7 +41,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * WordPress の機能に対して有料でしか使えないようにする制限をかけないこと
 
-* コンテンツを編集できるようにするため、ハードコード（訳者注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
+* コンテンツを編集できるようにするため、ハードコード（訳注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
 
 * 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること (Child theme ready)
 
@@ -59,7 +59,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * テーマのオプションを擬似的なカスタム投稿タイプにしないこと。また、重要なユーザーデータを保存してはいけません。
 
-* デザインに関連しない機能をテーマに含めないこと（訳者注：そういった機能はプラグインで提供しましょう）。([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+* デザインに関連しない機能をテーマに含めないこと（訳注：そういった機能はプラグインで提供しましょう）。([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
 
 * デモのコンテンツを使用してオプションの仕組みをユーザーに表示することはできますが、プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/) や既存のコンテンツ、インストール手順を使用してください。インストール手順はサイトの訪問者には表示させないようにし、edit_theme_options 権限を持つユーザーへのみ表示させるようにするべきです。
 
@@ -157,10 +157,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## スタイルシートとスクリプト - Stylesheets and Scripts
 
-* No hard coding of script and style files.
-* No minification of scripts or files unless you provide original files.
-* Required to use core-bundled scripts rather than including their own version of that script. For example jQuery.
-* Include all scripts and resources it uses rather than hotlinking. The exception to this is Google Fonts.
+* スクリプトやスタイルシートをハードコーディングしないこと。
+
+* 圧縮したスクリプト、ファイルなどは、圧縮前のファイルと一緒に配布する場合に限って提供できます。
+
+* たとえばjQueryなどコアにバンドルされているスクリプトを使用する場合は、独自のバージョンを別途含めるのではなく、バンドルされたスクリプトを使用する必要があります。
+
+* 外部リンクは利用せずに、使用するすべてのスクリプトとリソースをテーマに含めます。ただし Google フォントは例外とします。
 
 ## テンプレート - Templates
 

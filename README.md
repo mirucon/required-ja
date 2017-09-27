@@ -207,12 +207,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ### プラグインテリトリー
 
-* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ | Firegoby](https://firegoby.jp/archives/5975)
+* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ \| Firegoby](https://firegoby.jp/archives/5975)
 
 * [Pluginテリトリーについて // Speaker Deck](https://speakerdeck.com/oleindesign/pluginteritorinituite)
 
 ### 100% GPL ライセンス
 
-* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 | WP-D](https://wp-d.org/2013/03/01/3075/)
+* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 \| WP-D](https://wp-d.org/2013/03/01/3075/)
 
 * [GPL: WordPress 4つの自由と ビジネスモデル / WordCamp Tokyo 2015 講演スライド](https://www.slideshare.net/NSKW/gpl-wordpress-4-wordcamp-tokyo-2015)

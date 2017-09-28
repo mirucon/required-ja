@@ -16,16 +16,21 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## コード - Code
 
-* PHP, JavaScript のエラーがないこと
-* 有効な DOCTYPE の宣言と language_attributes があること
-* すべての信用されていないデータはデータベースに格納される前にバリデートされ無害化 (sanitize) されていること。また信用されていないデータは出力される前にエスケープされていること ([データ検証](http://wpdocs.osdn.jp/Data_Validation) を参照)
-* non-presentational なフックを削除 / 編集しないこと
-* [Theme Check の必須条件 (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を満たしていること
-* 一意の接頭詞 (プレフィックス) をすべてのパブリックな名前空間、オプション、関数、グローバル変数、定数、投稿のメタ情報などに使うこと
+* PHP, JavaScript のエラーがないこと。
+
+* 有効な DOCTYPE の宣言と language_attributes があること。
+
+* すべての信用されていないデータはデータベースに格納される前にバリデートされ無害化 (sanitize) されていること。また信用されていないデータは出力される前にエスケープされていること。([データ検証](http://wpdocs.osdn.jp/Data_Validation) を参照)
+
+* non-presentational なフック (見た目に関係しないフック) を削除 / 編集しないこと。
+
+* [Theme Check の必須条件 (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を満たしていること。
+
+* 一意の接頭詞 (プレフィックス) をすべてのパブリックな名前空間、オプション、関数、グローバル変数、定数、投稿のメタ情報などに使うこと。
 
 ## コアの機能と機能性 - Core Functionality and Features
 
-* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/)を使うこと。
+* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。
   以下の WordPress の機能性をサポートする必要があります :
 
   * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
@@ -37,23 +42,23 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
   * [エディタースタイル (英語)](https://developer.wordpress.org/reference/functions/add_editor_style/).
   * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
 
-* WordPress のコアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
+* WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
 
-* WordPress の機能に対して有料でしか使えないようにする制限をかけないこと
+* WordPress の機能に対して有料でしか使えないようにする制限をかけないこと。
 
 * コンテンツを編集できるようにするため、ハードコード（訳注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集されている必要があります。
 
-* 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること (Child theme ready)
+* 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること。 (Child theme ready)
 
 * style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
 
-* 正しい[テンプレートタグ](http://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0)・アクションフック・フィルターフックを使用すること
+* 正しい [テンプレートタグ](http://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0)・アクションフック・フィルターフックを使用すること。
 
-* comments.php を含めること ([comments_template()](https://wpdocs.osdn.jp/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0/comments_template) を使います)
+* comments.php を含めること。 ([comments_template()](https://wpdocs.osdn.jp/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0/comments_template) を使います)
 
 * テーマに後方互換性をつけることも出来ますが、3つのメジャーバージョンだけで十分です (4.8が最新であれば4.5)。
 
-* 管理バーを隠したり削除したり非表示にしないこと
+* 管理バーを隠したり削除したり非表示にしないこと。
 
 ## 見た目 vs 機能性 - Presentation vs Functionality
 
@@ -69,13 +74,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 言語 - Language
 
-* テーマにおけるすべての文字列は翻訳できる状態にすること (訳者注 : [i18n for WordPress Developers (日本語 Codex)](https://wpdocs.osdn.jp/I18n_for_WordPress_Developers) を参照)
+* テーマにおけるすべての文字列は翻訳できる状態にすること。 (訳注 : [i18n for WordPress Developers (日本語 Codex)](https://wpdocs.osdn.jp/I18n_for_WordPress_Developers) を参照)
 
-* style.css 内にテキストドメインを記載すること
+* style.css 内にテキストドメインを記載すること。
 
-* style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使っている場合でも3つ以上のスラッグを使うことは出来ません。
+* style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使用する場合でも使うスラッグは2つ以下にすること。
 
-* テキストに使用する言語を一つの言語で統一すること (どの言語も使用可能です)
+* テキストに使用する言語を一つの言語で統一すること。 (どの言語も使用可能です)
 
 ## ライセンス - Licensing
 

@@ -22,7 +22,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * すべての信用されていないデータはデータベースに格納される前にバリデートされ無害化 (sanitize) されていること。また信用されていないデータは出力される前にエスケープされていること。([データ検証](http://wpdocs.osdn.jp/Data_Validation) を参照)
 
-* non-presentational なフック (見た目に関係しないフック) を削除 / 編集しないこと。
+* non-presentational なフック (訳注 : 見た目に関係しないフック) を削除 / 編集しないこと。
 
 * [Theme Check の必須条件 (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を満たしていること。
 
@@ -164,23 +164,23 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * スクリプトやスタイルシートをハードコーディングしないこと。
 
-* 圧縮したスクリプト、ファイルなどは、圧縮前のファイルと一緒に配布する場合に限って提供できます。
+* 圧縮したスクリプトやスタイルシートを使う場合、圧縮前のファイルもテーマ内に含めること。
 
-* たとえばjQueryなどコアにバンドルされているスクリプトを使用する場合は、独自のバージョンを別途含めるのではなく、バンドルされたスクリプトを使用する必要があります。
+* jQuery のようなコアにバンドルされているスクリプトを使用する場合は、テーマで用意したものを使うのではなく、コアにバンドルされているスクリプトを使用すること。
 
-* 外部リンクは利用せずに、使用するすべてのスクリプトとリソースをテーマに含めます。ただし Google フォントは例外とします。
+* 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは例外とします。
 
 ## テンプレート - Templates
 
 * **テーマ内で使用する場合**、下記の標準のテンプレートファイルをそれぞれの関数によって呼び出すこと:
 
-    * header.php - [get_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)
+    * header.php - [get\_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)
 
-    * footer.php - [get_footer()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_footer)
+    * footer.php - [get\_footer()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_footer)
 
-    * sidebar.php - [get_sidebar()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_sidebar)
+    * sidebar.php - [get\_sidebar()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_sidebar)
 
-    * searchform.php - [get_search_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)
+    * searchform.php - [get\_search\_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)
 
 * **関連テンプレートを使用する場合**、テーマに下記の関数・テンプレートタグなどを含めること:
 
@@ -188,7 +188,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
     * [body_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/body_class) - &lt;body&gt; タグ内に含める
 
-    * [$content_width （訳注：コンテンツ幅）](https://wpdocs.osdn.jp/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%B9%85)
+    * [$content\_width （訳注：コンテンツ幅）](https://wpdocs.osdn.jp/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%B9%85)
 
     * [post\_class()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/post_class)
 
@@ -202,7 +202,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * カスタムテンプレートファイルは [get\_template\_part()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_template_part) もしくは [locate_template()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/locate_template) を使って呼び出すこと。
 
-* フロントページの設定に従って正しい内容が表示されること ([参照 （英語）](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))。
+* フロントページの設定に従って正しい内容が表示されること ([参照 (英語)](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))。
 
 **テーマレビューチームは現在これらのチェックを自動化しようとしています。**
 
@@ -212,12 +212,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ### プラグインテリトリー
 
-* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ - Firegoby](https://firegoby.jp/archives/5975)
+* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ \| Firegoby](https://firegoby.jp/archives/5975)
 
 * [Pluginテリトリーについて // Speaker Deck](https://speakerdeck.com/oleindesign/pluginteritorinituite)
 
 ### 100% GPL ライセンス
 
-* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 - WP-D](https://wp-d.org/2013/03/01/3075/)
+* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 \| WP-D](https://wp-d.org/2013/03/01/3075/)
 
 * [GPL: WordPress 4つの自由と ビジネスモデル / WordCamp Tokyo 2015 講演スライド](https://www.slideshare.net/NSKW/gpl-wordpress-4-wordcamp-tokyo-2015)

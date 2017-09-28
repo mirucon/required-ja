@@ -136,7 +136,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## プライバシー - Privacy
 
-* Don’t phone home without informed user consent. Make any collection of user data “opt-in” only and have a theme option that is set to disabled by default.
+* ユーザーの許可なしに開発者にデータを送るようにしないこと。またユーザーデータの収集機能を付ける場合、必ずオプトインにし、デフォルトでは無効状態にしておくこと。(訳注 : テーマオプションを使ってユーザーに有効無効を切り替えさせます)
 
 * 短縮 URL をテーマ内で使わないこと。
 

@@ -156,7 +156,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * ただし WordPress.org へのリンクはいつでも使用することが出来ます (訳注 : これは上記の「一つのリンク」にはカウントされません)。
 
-* If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
+* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売するに必要があります。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
 
 * 見苦しすぎるほどのテーマの宣伝を表示しないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
@@ -204,7 +204,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * フロントページの設定に従って正しい内容が表示されること ([参照 （英語）](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))。
 
-**テーマレビューチームは現在これらの必須項目のチェックを自動化しようとしています。**
+**テーマレビューチームは現在これらのチェックを自動化しようとしています。**
 
 上記の必須項目に加えて  **[推奨項目 (英語)](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮するべきです。推奨項目はテーマがより良いものになるようなベストプラクティスとして含めるべきアドバイスです。
 
@@ -212,12 +212,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ### プラグインテリトリー
 
-* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ \| Firegoby](https://firegoby.jp/archives/5975)
+* [Plugin Territory – WordPressのその処理はテーマでやるべきかプラグインでやるべきか？ - Firegoby](https://firegoby.jp/archives/5975)
 
 * [Pluginテリトリーについて // Speaker Deck](https://speakerdeck.com/oleindesign/pluginteritorinituite)
 
 ### 100% GPL ライセンス
 
-* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 \| WP-D](https://wp-d.org/2013/03/01/3075/)
+* [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 - WP-D](https://wp-d.org/2013/03/01/3075/)
 
 * [GPL: WordPress 4つの自由と ビジネスモデル / WordCamp Tokyo 2015 講演スライド](https://www.slideshare.net/NSKW/gpl-wordpress-4-wordcamp-tokyo-2015)

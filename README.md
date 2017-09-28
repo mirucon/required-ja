@@ -1,4 +1,4 @@
-(最終更新 : 2017/09/27)
+(最終更新 : 2017/09/28)
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 

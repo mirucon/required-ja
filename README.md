@@ -30,8 +30,8 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## コアの機能と機能性 - Core Functionality and Features
 
-* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。
-  以下の WordPress 機能をサポートする必要があります :
+* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。  
+以下の WordPress 機能をサポートする必要があります :
 
     * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
     * [サイドバー (英語)](https://developer.wordpress.org/themes/functionality/sidebars/)
@@ -41,7 +41,6 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
     * [カスタム背景](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.82.AB.E3.82.B9.E3.82.BF.E3.83.A0.E8.83.8C.E6.99.AF)
     * [エディタースタイル (英語)](https://developer.wordpress.org/reference/functions/add_editor_style/).
     * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
-
 
 * WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
 

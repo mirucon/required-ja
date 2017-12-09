@@ -6,7 +6,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 テーマが WordPress.org の公式レポジトリに掲載されるためには、以下の必須事項すべてを満たしている必要があります。
 
-5個以上の明確な問題があるテーマは not-approved としてチケットがクローズされることがあります。その場合でも問題を修正したあとにもう一度テーマを提出することは出来ます。
+3個以上の明確な問題があるテーマは not-approved としてチケットがクローズされることがあります。その場合でも問題を修正したあとにもう一度テーマを提出することは出来ます。
 
 これらのチェックに加えて [Theme Check プラグイン](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を使用してテーマをテストする必要があります。テーマチェックが何をチェックしているかは [こちら (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) から確認できます。
 

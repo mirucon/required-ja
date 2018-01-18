@@ -1,4 +1,4 @@
-(最終更新 : 2017/09/28)
+(最終更新 : 2018/01/18)
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
@@ -30,8 +30,8 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## コアの機能と機能性 - Core Functionality and Features
 
-* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。  
-以下の WordPress 機能をサポートする必要があります :
+* 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。  
+もし以下の機能をサポートする場合、WordPress 標準機能を使う必要があります :
 
     * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
     * [サイドバー (英語)](https://developer.wordpress.org/themes/functionality/sidebars/)
@@ -42,11 +42,10 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
     * [エディタースタイル (英語)](https://developer.wordpress.org/reference/functions/add_editor_style/).
     * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
 
-* WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
 
 * WordPress の機能に対して有料でしか使えないようにする制限をかけないこと。
 
-* コンテンツを編集できるようにするため、ハードコード（訳注：テーマ内のコードへの直接の記述）を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集する必要があります。
+* コンテンツを編集できるようにするため、ハードコード (訳注：テーマ内のコードへの直接の記述) を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集する必要があります。
 
 * 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること。 (Child theme ready)
 
@@ -64,7 +63,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * テーマのオプションを擬似的なカスタム投稿タイプにしないこと。また、重要なユーザーデータを保存しないこと。
 
-* デザインに関連しない機能をテーマに含めないこと。（訳注：そういった機能はプラグインで提供します）([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+* デザインに関連しない機能をテーマに含めないこと。(訳注：そういった機能はプラグインで提供します) ([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
 
 * デモのコンテンツを使用してオプションの仕組みをユーザーに表示することは出来ますが、プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/) や既存のコンテンツ、インストール手順を使用します。それらはサイトの訪問者でなく edit\_theme\_options 権限を持つユーザーへのみ表示させるようにすべきです。
 
@@ -96,11 +95,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 名前付け - Naming
 
-* "WordPress" 及び "Theme" をテーマ名に使用しないこと。
+* テーマ名に "WordPress" 及び "Theme" を使用しないこと。
 
-* 子テーマの名前に親テーマの名前を含まれないこと (子テーマと親テーマの制作者が同じの場合を除く)。
+* 子テーマの名前に親テーマの名前を含めないこと (子テーマと親テーマの制作者が同じの場合を除く)。
 
-* フロントエンドに表示される場所で正しい"WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟みません。
+* フロントエンドに表示される場所で正しい "WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟みません。
 
 ## オプションと設定 - Options and Settings
 
@@ -110,25 +109,25 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * [常識的なデフォルト値 (英語)](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) を使い、デフォルト設定はデータベース内に書かないこと。
 
-* 設定を編集できるユーザーを判別するには edit\_theme\_options 権限を使うこと。管理者のような権限グループや他の権限 (edit\_themes や manage\_options) よりもそちらが好ましいです。
+* 設定を編集できるユーザーを判別するには edit\_theme\_options 権限を使うこと。管理者のような権限グループや他の権限 (edit\_themes や manage\_options) よりもそちらを使うべきです。
 
 ## プラグイン - Plugins
 
-* テーマ内にプラグインを含まないこと。
+* テーマ内にプラグインを含めないこと。
 
 * テーマの動作のためにプラグインを要求しないこと。
 
-* テーマは WordPress.org のプラグインディレクトリにあるプラグインを推奨することのみ出来ます。
+* テーマは WordPress.org のプラグインディレクトリにあるプラグインを**推奨する**ことのみ可能。
 
-* テーマ内でプラグインを推薦するには [TGM Plugin Activation](http://tgmpluginactivation.com/) を使うこと。
+* テーマ内でプラグインを推奨するには [TGM Plugin Activation](http://tgmpluginactivation.com/) を使うこと。
 
-* テーマ内にオプションフレームワークのようなライブラリ (ただしこれも要求事項を満たしている必要あり) を含むことも可能です。
+* テーマ内にオプションフレームワークのようなライブラリを含むことは可能。ただしそれらも要求事項を満たしている必要があります。
 
 ## スクリーンショット - Screenshot
 
 * スクリーンショットがテーマの外観を適切に表現しているものであること。
 
-* スクリーンショット内でテーマがサポートするプラグインや設定、テンプレートを表示させることは可能です。
+* スクリーンショット内でテーマがサポートするプラグインや設定、テンプレートを表示させることは可能。
 
 * スクリーンショットがロゴやモックアップでないこと。
 
@@ -154,11 +153,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * フッタークレジットには style.css 内に記述された Theme URI もしくは Author URI のどちらかのみが使用されていること。
 
-* ただし WordPress.org へのリンクはいつでも使用することが出来ます。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
+* ただし WordPress.org へのリンクはいつでも使用することは可能。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
 
-* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売するに必要があります。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
+* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売するに必要があります。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))
 
-* 見苦しすぎるほどのテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
+* 見苦しすぎるほどにテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
 ## スタイルシートとスクリプト - Stylesheets and Scripts
 
@@ -168,7 +167,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * jQuery のようなコアにバンドルされているスクリプトを使用する場合は、テーマで用意したものを使うのではなく、コアにバンドルされているスクリプトを使用すること。
 
-* 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは例外とします。
+* 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは使用可能です。
 
 ## テンプレート - Templates
 
@@ -206,7 +205,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 **テーマレビューチームは現在これらのチェックを自動化しようとしています。**
 
-上記の必須項目に加えて  **[推奨項目 (英語)](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮するべきです。推奨項目はテーマがより良いものになるようなベストプラクティスとして含めるべきアドバイスです。
+上記の必須項目に加えて  **[推奨項目 (英語)](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended")** も考慮するべきです。推奨項目はテーマがより良いものになるようなベストプラクティスとして含めるべきアドバイスです。
 
 ## 参照 - References
 

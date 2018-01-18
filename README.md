@@ -42,12 +42,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
     * [エディタースタイル (英語)](https://developer.wordpress.org/reference/functions/add_editor_style/).
     * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
 
+* WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
 
 * WordPress の機能に対して有料でしか使えないようにする制限をかけないこと。
 
 * コンテンツを編集できるようにするため、ハードコード (訳注：テーマ内のコードへの直接の記述) を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集する必要があります。
 
-* 提出するテーマから子テーマがきちんと作れて、かつ使用できるようになっていること。 (Child theme ready)
+* テーマから子テーマがきちんと作れて、かつ使用できるようになっていること。 (Child theme ready)
 
 * style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
 

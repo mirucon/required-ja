@@ -1,4 +1,4 @@
-(最終更新 : 2018/01/18)
+(最終更新 : 2018/04/11)
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
@@ -217,6 +217,8 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * [Pluginテリトリーについて // Speaker Deck](https://speakerdeck.com/oleindesign/pluginteritorinituite)
 
 ### 100% GPL ライセンス
+
+* [[保存版] WordPress テーマのライセンス、GPL のおはなし – ミルログ](https://www.mirucon.com/2018/04/10/all-about-gpl/)
 
 * [【テーマ編】WordPress を使うなら知っておきたい GPL の知識 \| WP-D](https://wp-d.org/2013/03/01/3075/)
 

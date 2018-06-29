@@ -1,0 +1,18 @@
+language: node_js
+branches:
+  only:
+    - master
+
+before_script:
+  - yarn install
+
+script:
+  - node track/TrackChanges.js
+
+after_success:
+  - git clone "git@github.com:${TRAVIS_REPO_SLUG}" en
+  - cp required-en.md en/required.md
+  - cd en
+  - git add required.md
+  - git commit --quite -m "Original change detected."
+  - git push --quite "https://${GH_TOKEN}@${GH_REF}" en > /dev/null 2>&1

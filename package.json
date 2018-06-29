@@ -1,0 +1,13 @@
+{
+  "name": "required-ja",
+  "version": "1.0.0",
+  "description": "Japanese translation of requirements for WPTRT",
+  "main": "README.md",
+  "repository": "git@github.com:mirucon/required-ja",
+  "author": "Toshihiro Kanai <i@miruc.co>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "turndown": "^4.0.2"
+  }
+}

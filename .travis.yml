@@ -12,11 +12,23 @@ script:
   - node track/TrackChanges.js
 
 after_success:
-  - git clone "git@github.com:${TRAVIS_REPO_SLUG}" en
-  - cp required-en.md required.md
+  - |
+    if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
+      echo "Not deploying pull requests."
+      exit
+    fi
+  - |
+    if [[ "master" != "$TRAVIS_BRANCH" ]]; then
+    	echo "Not on the 'master' branch."
+    	exit
+    fi
+  - git clone "https://github.com/${TRAVIS_REPO_SLUG}.git" en
   - cd en
+  - git checkout en
+  - cp ../required-en.md ./
+  - mv required-en.md required.md
   - git config user.name "mirucon"
   - git config user.email "i@miruc.co"
   - git add required.md
-  - git commit -m "Original change detected."
-  - git push --quite "https://${GH_TOKEN}@${GH_REF}" en > /dev/null 2>&1
+  - git commit -m "Original change detected"
+  - git push --quite -f "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" en > /dev/null 2>&1

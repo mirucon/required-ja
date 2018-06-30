@@ -1,4 +1,4 @@
-Last modified: 2018-06-27T08:24:40
+Last modified: 2018-06-30T07:37:54
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -49,6 +49,7 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Non-design related functionality is not allowed. (See: [Plugin territory examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
 *   Demo content may be used to show the user how the options work. Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the edit\_theme\_options capability, not to visitors.
 *   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated.
+*   Adding custom blocks for Gutenberg (the new text editor in WordPress) is not allowed. Use a companion plugin instead.
 
 ## Documentation
 

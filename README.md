@@ -2,6 +2,8 @@
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
+訳注にリンクされている記事は英語ですが、この訳最下部にある参考リンクには日本語での参考になるリンクも記載されています。
+
 ---
 
 テーマが WordPress.org の公式レポジトリに掲載されるためには、以下の必須事項すべてを満たしている必要があります。
@@ -12,7 +14,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## アクセシビリティ - Accessibility
 
-* テーマに accessibility-ready タグがある場合、[これらの条件 (英語)](https://make.wordpress.org/themes/handbook/review/accessibility/) も満たしている必要があります。
+* テーマに accessibility-ready タグがある場合、[これらの条件 (英語)](https://make.wordpress.org/themes/handbook/review/accessibility/) も満たしていること。
 
 ## コード - Code
 
@@ -26,12 +28,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * [Theme Check の必須条件 (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/) を満たしていること。
 
-* 一意の接頭詞 (プレフィックス) をすべてのパブリックな名前空間、オプション、関数、グローバル変数、定数、投稿のメタ情報などに使うこと。ただしサイドバーとメニューの ID は例外です (これらはテーマ間で同じ名前にするとウィジェット/メニューを引き継げるため)。
+* 一意の接頭詞 (プレフィックス) をすべてのパブリックな名前空間、オプション、関数、グローバル変数、定数、投稿のメタ情報などに使うこと。ただしサイドバーとメニューの ID は例外とする (これらはテーマ間で同じ名前にするとウィジェット/メニューを引き継げるため)。
 
 ## コアの機能と機能性 - Core Functionality and Features
 
 * 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。  
-もし以下の機能をサポートする場合、WordPress 標準機能を使う必要があります :
+もし以下の機能をサポートする場合、以下の WordPress 標準機能を使うこと :
 
     * [フィードリンク](http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support#.E3.83.95.E3.82.A3.E3.83.BC.E3.83.89.E3.83.AA.E3.83.B3.E3.82.AF)
     * [サイドバー (英語)](https://developer.wordpress.org/themes/functionality/sidebars/)
@@ -42,23 +44,23 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
     * [エディタースタイル (英語)](https://developer.wordpress.org/reference/functions/add_editor_style/).
     * [ロゴ (英語)](https://developer.wordpress.org/themes/functionality/custom-logo/)
 
-* WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など)
+* WordPress コアでのみ使われることを意図した機能や API を使わないこと (例 : [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/)・[private functions](https://codex.wordpress.org/Category:Private_Functions) など) 。
 
 * WordPress の機能に対して有料でしか使えないようにする制限をかけないこと。
 
-* コンテンツを編集できるようにするため、ハードコード (訳注：テーマ内のコードへの直接の記述) を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数は [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集する必要があります。
+* コンテンツを編集できるようにするため、ハードコード (訳注：テーマ内のコードへの直接の記述) を避けること。その代わりに関数の引数、フィルターやアクションフックを使用してください。例えば、[wp_title()](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_title) 関数の出力を変更したい場合、 [その関数に備えられているフィルター](https://developer.wordpress.org/reference/hooks/wp_title/) を使用して編集すること。
 
-* テーマから子テーマがきちんと作れて、かつ使用できるようになっていること。 (Child theme ready)
+* テーマから子テーマがきちんと作れて、かつ使用できるようになっていること (Child theme ready) 。
 
-* style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用することは出来ません。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
+* style.css 内の [テーマタグ (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) と説明 (description) がテーマの実際の機能とデザインに一致していること。また3つ以上の subject tags を使用しないこと。([Theme Tag List (英語)](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) を参照)
 
 * 正しい [テンプレートタグ](http://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0)・アクションフック・フィルターフックを使用すること。
 
-* comments.php を含めること。 ([comments_template()](https://wpdocs.osdn.jp/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0/comments_template) を使います)
+* comments.php を含めること。 ([comments_template()](https://wpdocs.osdn.jp/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0/comments_template) を使用する)
 
-* テーマに後方互換性をつけることも出来ますが、3つのメジャーバージョンだけで十分です (4.8が最新であれば4.5)。
+* テーマに後方互換性をつけることも可能だが、3つのメジャーバージョンだけで十分とする (4.9が最新であれば4.6)。
 
-* 管理バーを隠したり削除したり非表示にしないこと。
+* 管理バーを隠す、削除する、非表示するなどをしないこと。
 
 ## 見た目 vs 機能性 - Presentation vs Functionality
 
@@ -66,13 +68,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * デザインに関連しない機能をテーマに含めないこと。(訳注：そういった機能はプラグインで提供します) ([プラグインテリトリー (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
 
-* デモのコンテンツを使用してオプションの仕組みをユーザーに表示することは出来ますが、プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/) や既存のコンテンツ、インストール手順を使用します。それらはサイトの訪問者でなく edit\_theme\_options 権限を持つユーザーへのみ表示させるようにすべきです。
+* デモのコンテンツを使用してオプションの仕組みをユーザーに表示することは可能だが、プレースホルダコンテンツではなく、[スターターコンテンツ (英語)](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/) や既存のコンテンツ、インストール手順を使用する。それらはサイトの訪問者でなく edit\_theme\_options 権限を持つユーザーへのみ表示させるようこと。
 
 * WordPress.org 上のテーマプレビュー上にプレビュー、デモデータの表示及びそれの操作をしないこと。
 
 ## ドキュメンテーション - Documentation
 
-* テーマが有するすべてのカスタム機能、テンプレート、オプションや制限事項 (メニュー制限など) に説明を用意すること。これらに関する十分なドキュメントが提供されているべきです。
+* テーマが有するすべてのカスタム機能、テンプレート、オプションや制限事項 (メニュー制限など) に説明を用意すること。またこれらに関する十分なドキュメントが提供されていること。
 
 ## 言語 - Language
 
@@ -82,7 +84,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使用する場合でも使うスラッグは2つ以下にすること。
 
-* テキストに使用する言語を一つの言語で統一すること。 (どの言語も使用可能です)
+* テキストに使用する言語を一つの言語で統一すること。 (どの言語でも使用可能)
 
 ## ライセンス - Licensing
 
@@ -92,7 +94,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 同梱されているすべてのリソース、例えばフォントや画像などのライセンスを明確にすること。
 
-* すべてのコードとデザインが自分自身のもの、もしくは法律上自分の所有物となっているものであること。他のデザインのコピーやクローンをすることは出来ません。
+* すべてのコードとデザインが自分自身のもの、もしくは法律上自分の所有物となっているものであること。他のデザインのコピーやクローンをしないこと。
 
 * フロントエンドに表示されるコピーライトがテーマ作者のコピーライトではなく、使用しているユーザーのものになっていること。
 
@@ -102,7 +104,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 子テーマの名前に親テーマの名前を含めないこと (子テーマと親テーマの制作者が同じの場合を除く)。
 
-* フロントエンドに表示される場所で正しい "WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟みません。
+* フロントエンドに表示される場所で正しい "WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟まない。
 
 ## オプションと設定 - Options and Settings
 
@@ -112,7 +114,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * [常識的なデフォルト値 (英語)](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) を使い、デフォルト設定はデータベース内に書かないこと。
 
-* 設定を編集できるユーザーを判別するには edit\_theme\_options 権限を使うこと。管理者のような権限グループや他の権限 (edit\_themes や manage\_options) よりもそちらを使うべきです。
+* 設定を編集できるユーザーを判別するには edit\_theme\_options 権限を使うこと。管理者のような権限グループや他の権限 (edit\_themes や manage\_options) よりもそちらを使うべき。
 
 ## プラグイン - Plugins
 
@@ -130,7 +132,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * スクリーンショットがテーマの外観を適切に表現しているものであること。
 
-* スクリーンショット内でテーマがサポートするプラグインや設定、テンプレートを表示させることは可能。
+* スクリーンショット内でテーマがサポートするプラグインや設定、テンプレートを表示させることは出来る。
 
 * スクリーンショットがロゴやモックアップでないこと。
 
@@ -144,21 +146,21 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 販売・クレジットとリンク - Selling, credits and links
 
-* Theme URI は任意の事項です。
+* Theme URI は任意の事項。
 
 * 使用する場合、WordPress.org 上でホスティングされているテーマに関するもの (訳注 : 「申請しこれから .org 上にホスティングされるテーマ」の意) にリンクすること。
 
 * リンク先がデモサイトの場合、そのコンテンツはテーマ自身に関することにし、テストデータにしないこと。
 
-* Theme URI に WordPress.org を使わないこと。これの使用は公式テーマのみが可能です。
+* Theme URI に WordPress.org を使わないこと。これの使用は公式テーマのみが可能。
 
-* Author URI は任意の事項です。使用する場合、テーマ作者の個人 Web サイトやプロジェクト、もしくは開発用の Web サイトにリンクすること。
+* Author URI は任意の事項。使用する場合、テーマ作者の個人 Web サイトやプロジェクト、もしくは開発用の Web サイトにリンクすること。
 
 * フッタークレジットには style.css 内に記述された Theme URI もしくは Author URI のどちらかのみが使用されていること。
 
-* ただし WordPress.org へのリンクはいつでも使用することは可能。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
+* ただし WordPress.org へのリンクはいつでも使用することが可能。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
 
-* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売するに必要があります。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))
+* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売すること。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))
 
 * 見苦しすぎるほどにテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
@@ -170,11 +172,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * jQuery のようなコアにバンドルされているスクリプトを使用する場合は、テーマで用意したものを使うのではなく、コアにバンドルされているスクリプトを使用すること。
 
-* 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは使用可能です。
+* 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは使用可能。
 
 ## テンプレート - Templates
 
-* **テーマ内で使用する場合**、下記の標準のテンプレートファイルをそれぞれの関数によって呼び出すこと:
+* **テーマ内で使用する場合**、下記の標準のテンプレートファイルをそれぞれの関数によって呼び出すこと :
 
     * header.php - [get\_header()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_header)
 
@@ -184,7 +186,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
     * searchform.php - [get\_search\_form()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_search_form)
 
-* **関連テンプレートを使用する場合**、テーマに下記の関数・テンプレートタグなどを含めること:
+* **関連テンプレートを使用する場合**、テーマに下記の関数・テンプレートタグなどを含めること :
 
     * [wp_head()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_head) - &lt;/head&gt; の直前
 

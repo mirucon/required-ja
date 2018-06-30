@@ -2,7 +2,7 @@
 
 WordPress.org の公式レポジトリにテーマを登録する際に必須になる条件の日本語訳です。原文は [https://make.wordpress.org/themes/handbook/review/required/](https://make.wordpress.org/themes/handbook/review/required/) をご覧ください。
 
-訳注にリンクされている記事は英語ですが、この訳最下部にある参考リンクには日本語での参考になるリンクも記載されています。
+以下でリンクされている記事は英語ですが、このページ下部にある参考リンクには日本語での参考になるリンクも記載されています。
 
 ---
 

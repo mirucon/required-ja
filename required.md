@@ -86,6 +86,7 @@ Note: If you are getting started with your first reviews, please read [Become a 
 
 *   Themes cannot include plugins.
 *   Themes cannot require plugins to work.
+*   Themes may recommend plugins from WordPress.org or third-party sites (link to them as free or upsell plugins, GPL licensed only).
 *   Themes may use [TGM Plugin Activation](http://tgmpluginactivation.com/) to recommend only plugins hosted on WordPress.org (by using `'required' => false` for each plugin).
 *   Themes may include libraries such as option frameworks (these must pass the requirements).
 

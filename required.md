@@ -1,4 +1,4 @@
-Last modified: 2018-06-30T07:37:54
+Last modified: 2018-08-01T12:03:29
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -20,6 +20,8 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   No removing or modifying non-presentational hooks.
 *   Must meet all [Theme Check requirements](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/)
 *   Provide a [unique prefix](http://themereview.co/prefix-all-the-things/) for everything the Theme defines in the public namespace, including options, functions, global variables, constants, post meta, etc. Theme nav menu locations and sidebar IDs are exceptions.
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#code)
 
 ## Core Functionality and Features
 
@@ -43,6 +45,8 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Themes may be backwards compatible, but only for 3 major WordPress versions (version 4.5 if 4.8 is latest).
 *   Themes should not remove, hide, or otherwise block the admin bar from appearing.
 
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#core-functionality-and-features)
+
 ## Presentation vs Functionality
 
 *   The theme options should not be pseudo custom post types and save non-trivial user data.
@@ -50,6 +54,8 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Demo content may be used to show the user how the options work. Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the edit\_theme\_options capability, not to visitors.
 *   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated.
 *   Adding custom blocks for Gutenberg (the new text editor in WordPress) is not allowed. Use a companion plugin instead.
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory)
 
 ## Documentation
 
@@ -61,6 +67,8 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Include a text domain in style.css.
 *   Use a single unique theme slug – as the theme slug appears in style.css. If it uses a framework then no more than 2 unique slugs.
 *   Can use any language for text, but only use the same one for all text.
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#language)
 
 ## Licensing
 
@@ -75,6 +83,8 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Theme names must not use: WordPress, Theme.
 *   Child themes should not include the name of the parent theme unless the themes have the same author.
 *   Spell “WordPress” correctly in all public facing text: all one word, with both an uppercase W and P.
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#naming)
 
 ## Options and Settings
 
@@ -115,12 +125,16 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
 *   Themes should not display “obtrusive” upselling. [Examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links).
 
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
+
 ## Stylesheets and Scripts
 
 *   No hard coding of script and style files.
 *   No minification of scripts or files unless you provide original files.
 *   Required to use core-bundled scripts rather than including their own version of that script. For example jQuery.
 *   Include all scripts and resources it uses rather than hotlinking. The exception to this is Google Fonts.
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
 
 ## Templates
 

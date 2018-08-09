@@ -1,4 +1,4 @@
-Last modified: 2018-08-01T12:03:29
+Last modified: 2018-08-08T12:48:30
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -54,6 +54,7 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Demo content may be used to show the user how the options work. Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the edit\_theme\_options capability, not to visitors.
 *   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated.
 *   Adding custom blocks for Gutenberg (the new text editor in WordPress) is not allowed. Use a companion plugin instead.
+*   Placeholder/default images for posts without defined featured images [**need to follow these rules**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#featured-images)
 
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory)
 
@@ -107,6 +108,7 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   The screenshot may optionally show supported plugins, settings and templates.
 *   The screenshot should not be a logo or mockup.
 *   The screenshot should be no bigger than 1200 x 900px.
+*   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
 
 ## Privacy
 

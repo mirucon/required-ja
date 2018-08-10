@@ -1,4 +1,4 @@
-Last modified: 2018-08-08T12:48:30
+Last modified: 2018-08-09T13:39:48
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -108,7 +108,9 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   The screenshot may optionally show supported plugins, settings and templates.
 *   The screenshot should not be a logo or mockup.
 *   The screenshot should be no bigger than 1200 x 900px.
-*   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
+*   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary. **[More info](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)**
+
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)
 
 ## Privacy
 

@@ -74,6 +74,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * Gutenberg (WordPress の次期エディタ) のカスタムブロックを追加しないこと。
 
+<!--
+*   Placeholder/default images for posts without defined featured images [**need to follow these rules**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#featured-images)
+-->
+
+* アイキャッチ画像が設定されていない時に表示するプレースホルダ・デフォルト画像は [次のルール (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#featured-images) を守る必要があります。
+
 ## ドキュメンテーション - Documentation
 
 * テーマが有するすべてのカスタム機能、テンプレート、オプションや制限事項 (メニュー制限など) に説明を用意すること。またこれらに関する十分なドキュメントが提供されていること。
@@ -139,6 +145,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * スクリーンショットがロゴやモックアップでないこと。
 
 * スクリーンショットが 1200 x 900px より大きくないこと。
+
+<!--
+*   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
+-->
+
+* brilliant, amazing, best, trusted (素敵な、素晴らしい、ベスト、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に立証することが難しく、また一時的なものである。
 
 ## プライバシー - Privacy
 

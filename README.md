@@ -30,6 +30,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 一意の接頭詞 (プレフィックス) をすべてのパブリックな名前空間、オプション、関数、グローバル変数、定数、投稿のメタ情報などに使うこと。ただしサイドバーとメニューの ID は例外とする (これらはテーマ間で同じ名前にするとウィジェット/メニューを引き継げるため)。
 
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#code)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#code)
+
 ## コアの機能と機能性 - Core Functionality and Features
 
 * 可能な限り [WordPress の機能](https://developer.wordpress.org/themes/functionality/) を使うこと。  
@@ -62,6 +68,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 管理バーを隠す、削除する、非表示するなどをしないこと。
 
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#core-functionality-and-features)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#core-functionality-and-features)
+
 ## 見た目 vs 機能性 - Presentation vs Functionality
 
 * テーマのオプションを擬似的なカスタム投稿タイプにしないこと。また、重要なユーザーデータを保存しないこと。
@@ -80,6 +92,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * アイキャッチ画像が設定されていない時に表示するプレースホルダ・デフォルト画像は [次のルール (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#featured-images) を守る必要があります。
 
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory)
+
 ## ドキュメンテーション - Documentation
 
 * テーマが有するすべてのカスタム機能、テンプレート、オプションや制限事項 (メニュー制限など) に説明を用意すること。またこれらに関する十分なドキュメントが提供されていること。
@@ -93,6 +111,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * style.css 内に記述した一意のテーマスラッグ (theme slug) を使うこと。フレームワークを使用する場合でも使うスラッグは2つ以下にすること。
 
 * テキストに使用する言語を一つの言語で統一すること。 (どの言語でも使用可能)
+
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#language)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#language)
 
 ## ライセンス - Licensing
 
@@ -113,6 +137,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * 子テーマの名前に親テーマの名前を含めないこと (子テーマと親テーマの制作者が同じの場合を除く)。
 
 * フロントエンドに表示される場所で正しい "WordPress" のスペルを使うこと。"W" 及び "P" を大文字にし、"Word" と "Press" の間にはスペースを挟まない。
+
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#naming)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#naming)
 
 ## オプションと設定 - Options and Settings
 
@@ -150,7 +180,13 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 *   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
 -->
 
-* brilliant, amazing, best, trusted (素敵な、素晴らしい、ベスト、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に立証することが難しく、また一時的なものである。
+* brilliant, amazing, best, trusted (素敵な、素晴らしい、最高の、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に立証することが難しく、また一時的なものである。**[詳細 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)**
+
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
+-->
+
+[**説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
 
 ## プライバシー - Privacy
 
@@ -178,6 +214,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * 見苦しすぎるほどにテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
+
 ## スタイルシートとスクリプト - Stylesheets and Scripts
 
 * スクリプトやスタイルシートをハードコーディングしないこと。
@@ -187,6 +229,12 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 * jQuery のようなコアにバンドルされているスクリプトを使用する場合は、テーマで用意したものを使うのではなく、コアにバンドルされているスクリプトを使用すること。
 
 * 使用するすべてのスクリプトやリソースは外部リンク (訳注 : CDN 等) ではなくテーマ内に含めること。ただし Google フォントは使用可能。
+
+<!--
+[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
+-->
+
+[**» 説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
 
 ## テンプレート - Templates
 

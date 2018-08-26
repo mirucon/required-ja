@@ -104,7 +104,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 ## 言語 - Language
 
-* テーマにおけるすべての文字列は翻訳できる状態にすること。 (訳注 : [i18n for WordPress Developers (日本語 Codex)](https://wpdocs.osdn.jp/I18n_for_WordPress_Developers) を参照)
+* テーマにおけるすべての文字列を翻訳できる状態にすること。 (訳注 : [i18n for WordPress Developers (日本語 Codex)](https://wpdocs.osdn.jp/I18n_for_WordPress_Developers) を参照)
 
 * style.css 内にテキストドメインを記載すること。
 

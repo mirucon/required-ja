@@ -1,4 +1,4 @@
-Last modified: 2018-08-14T07:19:30
+Last modified: 2018-09-05T11:03:15
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -127,7 +127,7 @@ Screenshots are allowed to display only dummy text that doesn’t suggest/descri
 *   *Author URI is optional*. If used it is required to link to a page or website about the author, author theme shop, or author project/development website.
 *   Themes may have a single footer credit link, which is restricted to the Theme URI or Author URI defined in style.css.
 *   Themes may also have an additional footer credit link pointing to WordPress.org.
-*   If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
+*   If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)) and your site needs to state this explicitly in an easy-to-find place for the reviewer and customers.
 *   Themes should not display “obtrusive” upselling. [Examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links).
 
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)

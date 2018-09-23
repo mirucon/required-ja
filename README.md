@@ -180,7 +180,7 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 *   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
 -->
 
-* brilliant, amazing, best, trusted (素敵な、素晴らしい、最高の、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に立証することが難しく、また一時的なものである。**[詳細 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)**
+* brilliant, amazing, best, trusted (素敵な、素晴らしい、最高の、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に真実として立証することが難しく、また一時的なものである。**[詳細 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)**
 
 <!--
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)

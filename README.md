@@ -176,17 +176,8 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * スクリーンショットが 1200 x 900px より大きくないこと。
 
-<!--
-*   Do not use subjective words like brilliant, amazing, best, trusted, etc. These words describe your opinion rather than what the theme actually is. Also, displaying theme statistics in screenshots is forbidden, e.g: top 100, most downloaded, 5 stars, etc. These can’t be verified with certainty and are temporary.
--->
-
-* brilliant, amazing, best, trusted (素敵な、素晴らしい、最高の、信頼された) などの主観的な言葉を使わないこと。これらはただの意見であり、実際のテーマがどういうものなのかの説明にならない。また「top 100 (トップ100)」や「most downloaded (最もダウンロードされた)」、「5 starts (星5)」などの統計上のデータを使わないこと。これらは確証を元に真実として立証することが難しく、また一時的なものである。**[詳細 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#screenshot)**
-
-<!--
-[**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
--->
-
-[**説明と実例** (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
+* テーマの特徴、機能性または統計情報を示唆、描写しないダミーテキストのみ表示されたスクリーンショットは許容される。ただし、広告のような見た目であれば許可されない。
+* ダミーテキスト例：Lorem ipsum (もしくはそれと似たような自動生成されたテキスト)、作成したテーマ、企業、サービスもしくは製品を描写しないテキスト
 
 ## プライバシー - Privacy
 
@@ -210,9 +201,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * ただし WordPress.org へのリンクはいつでも使用することが可能。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
 
-* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売すること。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))
+* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売すること。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))また、それを明確に、レビュワーと顧客が簡単に探せる場所に記述する必要がある。
 
 * 見苦しすぎるほどにテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
+
+* アフィリエイトURLやリンクを含まないこと。 
 
 <!--
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)

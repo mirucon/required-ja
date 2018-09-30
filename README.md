@@ -176,8 +176,8 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * スクリーンショットが 1200 x 900px より大きくないこと。
 
-* テーマの特徴、機能性または統計情報を示唆、描写しないダミーテキストのみ表示されたスクリーンショットは許容される。ただし、広告のような見た目であれば許可されない。
-* ダミーテキスト例：Lorem ipsum (もしくはそれと似たような自動生成されたテキスト)、作成したテーマ、企業、サービスもしくは製品を描写しないテキスト
+* スクリーンショット内でテーマの特徴、機能性または統計情報を含まないダミーテキストのみ表示することができる。ただし、広告のような見た目であってはいけない。
+* ダミーテキスト例： Lorem ipsum (もしくはそれと似たような自動生成されたテキスト)、作成したテーマ、企業、サービスもしくは商品を描写しないテキスト
 
 ## プライバシー - Privacy
 
@@ -201,11 +201,11 @@ WordPress.org の公式レポジトリにテーマを登録する際に必須に
 
 * ただし WordPress.org へのリンクはいつでも使用することが可能。(訳注 : これは上記の「一つのリンクのみ」にはカウントされません)
 
-* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売すること。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))また、それを明確に、レビュワーと顧客が簡単に探せる場所に記述する必要がある。
+* テーマ販売をしている場合、WordPress.org にテーマを登録するには GPL ライセンスの元販売すること。([説明 (英語)](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/))また、それを明確に、レビュワーとユーザーが簡単に探せる場所に記述する必要がある。
 
 * 見苦しすぎるほどにテーマの宣伝をしないこと。[例 (英語)](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)
 
-* アフィリエイトURLやリンクを含まないこと。 
+* アフィリエイト URL ・リンクを含まないこと。
 
 <!--
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links)

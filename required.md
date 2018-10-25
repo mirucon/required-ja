@@ -1,4 +1,4 @@
-Last modified: 2018-09-26T05:58:33
+Last modified: 2018-10-24T03:04:03
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -7,6 +7,10 @@ Themes that have 3 or more distinct issues may be closed as not-approved. Howeve
 Along with these checks you should also run the theme through the [Theme Check](https://wordpress.org/plugins/theme-check/) plugin. You can find a full list of what it [checks here](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/ "Theme check plugin").
 
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 
+
+## Child themes
+
+*   Child themes must introduce more than minor changes (such as new fonts/colours) to the parent theme to be accepted
 
 ## Accessibility
 

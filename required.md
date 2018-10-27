@@ -1,4 +1,4 @@
-Last modified: 2018-10-24T03:04:03
+Last modified: 2018-10-25T07:06:47
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -10,7 +10,7 @@ Note: If you are getting started with your first reviews, please read [Become a 
 
 ## Child themes
 
-*   Child themes must introduce more than minor changes (such as new fonts/colours) to the parent theme to be accepted
+*   Child themes must include more than minor changes (such as font and colour changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment).
 
 ## Accessibility
 
@@ -50,6 +50,11 @@ Note: If you are getting started with your first reviews, please read [Become a 
 *   Themes should not remove, hide, or otherwise block the admin bar from appearing.
 
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#core-functionality-and-features)
+
+## readme.txt file
+
+*   Use this [format for your readme.txt file](https://make.wordpress.org/themes/2015/04/29/a-revised-readme/)
+*   New themes need to follow this rule as of October 25th, 2018. Old themes have a 6 months grace time from this date.
 
 ## Presentation vs Functionality
 

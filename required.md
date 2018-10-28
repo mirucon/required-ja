@@ -1,4 +1,4 @@
-Last modified: 2018-10-25T07:06:47
+Last modified: 2018-10-27T06:47:50
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -7,6 +7,8 @@ Themes that have 3 or more distinct issues may be closed as not-approved. Howeve
 Along with these checks you should also run the theme through the [Theme Check](https://wordpress.org/plugins/theme-check/) plugin. You can find a full list of what it [checks here](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/ "Theme check plugin").
 
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 
+
+Warning: **If you are a theme shop you should be selling under GPL to be in the WordPress.org repo** ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)). Example: If you have a **Themeforest account** and you’re selling themes on it, all those themes need to state on their sales page that they are **100% GPL compatible** ([Info](https://help.market.envato.com/hc/en-us/articles/202501194-Theme-Plugin-Licensing-Options)).
 
 ## Child themes
 
@@ -136,7 +138,7 @@ Screenshots are allowed to display only dummy text that doesn’t suggest/descri
 *   *Author URI is optional*. If used it is required to link to a page or website about the author, author theme shop, or author project/development website.
 *   Themes may have a single footer credit link, which is restricted to the Theme URI or Author URI defined in style.css.
 *   Themes may also have an additional footer credit link pointing to WordPress.org.
-*   If you are a theme shop you should be selling under GPL to be in the WordPress.org repo ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)) and your site needs to state this explicitly in an easy-to-find place for the reviewer and customers.
+*   Your site needs to state explicitly that the products you’re selling are GPL compatible. It needs to be in an easy-to-find place for the reviewer and customers.
 *   Themes should not display “obtrusive” upselling. [Examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#selling-credits-and-links).
 *   Themes are not allowed to have affiliate URLs or links.
 

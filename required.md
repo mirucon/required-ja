@@ -8,6 +8,8 @@ Along with these checks you should also run the theme through the [Theme Check](
 
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 
 
+  
+
 Warning: **If you are a theme shop you should be selling under GPL to be in the WordPress.org repo** ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)). Example: If you have a **Themeforest account** and you’re selling themes on it, all those themes need to state on their sales page that they are **100% GPL compatible** ([Info](https://help.market.envato.com/hc/en-us/articles/202501194-Theme-Plugin-Licensing-Options)).
 
 ## Child themes

@@ -1,4 +1,4 @@
-Last modified: 2018-10-27T06:47:50
+Last modified: 2019-03-23T15:51:42
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -52,6 +52,7 @@ Warning: **If you are a theme shop you should be selling under GPL to be in the 
 *   Include comments.php (via [comments_template()](https://codex.wordpress.org/Function_Reference/comments_template)).
 *   Themes may be backwards compatible, but only for 3 major WordPress versions (version 4.5 if 4.8 is latest).
 *   Themes should not remove, hide, or otherwise block the admin bar from appearing.
+*   Core theme activation UX should not be modified. There should be no *redirect on activation* behaviour.
 
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#core-functionality-and-features)
 

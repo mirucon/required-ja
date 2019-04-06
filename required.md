@@ -1,4 +1,4 @@
-Last modified: 2019-03-23T15:51:42
+Last modified: 2019-04-05T11:59:19
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -6,11 +6,25 @@ Themes that have 3 or more distinct issues may be closed as not-approved. Howeve
 
 Along with these checks you should also run the theme through the [Theme Check](https://wordpress.org/plugins/theme-check/) plugin. You can find a full list of what it [checks here](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/ "Theme check plugin").
 
+* * *
+
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 
 
-  
+* * *
 
 Warning: **If you are a theme shop you should be selling under GPL to be in the WordPress.org repo** ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)). Example: If you have a **Themeforest account** and you’re selling themes on it, all those themes need to state on their sales page that they are **100% GPL compatible** ([Info](https://help.market.envato.com/hc/en-us/articles/202501194-Theme-Plugin-Licensing-Options)).
+
+* * *
+
+## Multiple Theme Author Accounts
+
+Warning: **This is important,  so please read it carefully**
+
+You can have multiple accounts with the following restrictions:
+
+*   You can’t have more than one (1) open ticket in any of the trac reports/queues or under review. That means you can’t have one (1) theme ticket from an account and another one from a secondary account, simultaneously open in any of the queues.
+*   Failing to respect the above requirement will result in the closing of all tickets and not having the possibility to upload those themes again. Also, a 1 month no upload possibility for each ticket closed. Depending on the severity of the case, you might also end up with a permanent ban on all your accounts
+*   To avoid penalties, we request that you disclose all your accounts by emailing us at themes\[at\]wordpress.org.
 
 ## Child themes
 

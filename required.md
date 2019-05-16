@@ -1,4 +1,4 @@
-Last modified: 2019-04-05T11:59:19
+Last modified: 2019-05-14T17:58:32
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -72,7 +72,7 @@ You can have multiple accounts with the following restrictions:
 
 ## readme.txt file
 
-*   Use this [format for your readme.txt file](https://make.wordpress.org/themes/2015/04/29/a-revised-readme/)
+*   Use this [format for your readme.txt file](https://make.wordpress.org/themes/handbook/review/required/sample-readme/)
 *   New themes need to follow this rule as of October 25th, 2018. Old themes have a 6 months grace time from this date.
 
 ## Presentation vs Functionality
@@ -119,6 +119,7 @@ You can have multiple accounts with the following restrictions:
 
 *   [Use the Customizer for implementing theme options](https://make.wordpress.org/themes/2015/04/22/details-on-the-new-theme-settings-customizer-guideline/).
 *   Save options in a single array.
+*   Don’t use transients for things they shouldn’t be used for, like storing theme options.
 *   Use [sane defaults](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) and don’t write default setting values to the database.
 *   Use *edit\_theme\_options* capability for determining user permission to edit options, rather than rely on a role (e.g. “administrator”), or a different capability (e.g. “edit\_themes”, “manage\_options”).
 

@@ -1,4 +1,4 @@
-Last modified: 2019-05-14T17:58:32
+Last modified: 2019-05-27T07:44:21
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -37,7 +37,6 @@ You can have multiple accounts with the following restrictions:
 ## Code
 
 *   No PHP or JS notices.
-*   Have a valid DOCTYPE declaration and include language_attributes.
 *   Validate and/or sanitize untrusted data before entering into the database. All untrusted data should be escaped before output. (See: [Data Validation](https://codex.wordpress.org/Data_Validation))
 *   No removing or modifying non-presentational hooks.
 *   Must meet all [Theme Check requirements](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/)
@@ -167,7 +166,7 @@ Screenshots are allowed to display only dummy text that doesn’t suggest/descri
 *   No hard coding of script and style files.
 *   No minification of scripts or files unless you provide original files.
 *   Required to use core-bundled scripts rather than including their own version of that script. For example jQuery.
-*   Include all scripts and resources it uses rather than hotlinking. The exception to this is Google Fonts.
+*   Include all scripts and resources it uses rather than hot-linking. The exception to this is Google Fonts.
 
 [**» Explanations & examples**](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#stylesheets-and-scripts)
 
@@ -179,14 +178,15 @@ Screenshots are allowed to display only dummy text that doesn’t suggest/descri
     *   sidebar.php (via [get_sidebar()](https://codex.wordpress.org/Function_Reference/get_sidebar)).
     *   searchform.php (via [get\_search\_form()](https://codex.wordpress.org/Function_Reference/get_search_form)).
 *   *If you use the relevant templates,* your theme should include:
-    *   [wp_head()](https://developer.wordpress.org/reference/functions/wp_head) – (immediately before </head>).
-    *   [body_class()](https://developer.wordpress.org/reference/functions/body_class) – (inside <body> tag).
+    *   [wp_head()](https://developer.wordpress.org/reference/functions/wp_head) – (immediately before `</head>`).
+    *   [body_class()](https://developer.wordpress.org/reference/functions/body_class) – (inside `<body>` tag).
     *   [$content_width.](https://codex.wordpress.org/Content_Width)
     *   [post_class()](https://developer.wordpress.org/reference/functions/post_class).
     *   [wp\_link\_pages()](https://developer.wordpress.org/reference/functions/wp_link_pages).
     *   [the\_comments\_navigation()](https://developer.wordpress.org/reference/functions/the_comments_navigation/), [the\_comments\_pagination()](https://developer.wordpress.org/reference/functions/the_comments_pagination/).
     *   [the\_posts\_pagination()](https://developer.wordpress.org/reference/functions/the_posts_pagination/), [the\_posts\_navigation()](https://developer.wordpress.org/reference/functions/the_posts_navigation/).
     *   [wp_footer()](https://developer.wordpress.org/reference/functions/wp_footer) – (immediately before </body>).
+*   Have a valid DOCTYPE declaration and include `language_attributes()`.
 *   Custom template files should be called using [get\_template\_part()](https://developer.wordpress.org/reference/functions/get_template_part/) or [locate_template()](https://developer.wordpress.org/reference/functions/locate_template/).
 *   Display the correct content according to the front page setting. ([See explanation](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))
 

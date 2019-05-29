@@ -1,4 +1,4 @@
-Last modified: 2019-05-27T07:44:21
+Last modified: 2019-05-28T17:33:03
 
 A theme must meet all of the following requirements to be included in the WordPress.org theme repository.
 
@@ -63,7 +63,7 @@ You can have multiple accounts with the following restrictions:
 *   The [theme tags](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) in style.css and description must match what the theme actually does in respect to functionality and design. Don’t use more than 3 subject tags (See: [Theme Tag List](https://make.wordpress.org/themes/handbook/review/required/theme-tags/)).
 *   Use [template tags](https://codex.wordpress.org/Template_Tags) and action/filter hooks properly.
 *   Include comments.php (via [comments_template()](https://codex.wordpress.org/Function_Reference/comments_template)).
-*   Themes may be backwards compatible, but only for 3 major WordPress versions (version 4.5 if 4.8 is latest).
+*   Themes may be backwards compatible, but only for 3 major WordPress versions (version 4.9 if 5.2 is latest).
 *   Themes should not remove, hide, or otherwise block the admin bar from appearing.
 *   Core theme activation UX should not be modified. There should be no *redirect on activation* behaviour.
 

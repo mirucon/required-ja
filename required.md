@@ -1,4 +1,4 @@
-Last modified: 2019-05-28T17:33:03
+Last modified: 2019-06-11T17:12:11
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -72,7 +72,6 @@ You can have multiple accounts with the following restrictions:
 ## readme.txt file
 
 *   Use this [format for your readme.txt file](https://make.wordpress.org/themes/handbook/review/required/sample-readme/)
-*   New themes need to follow this rule as of October 25th, 2018. Old themes have a 6 months grace time from this date.
 
 ## Presentation vs Functionality
 

@@ -1,10 +1,10 @@
-Last modified: 2019-06-11T17:12:11
+Last modified: 2019-06-18T20:38:43
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
 Themes that have 3 or more distinct issues may be closed as not-approved. However, theme authors may resubmit the theme once they’ve corrected the issues.
 
-Along with these checks you should also run the theme through the [Theme Check](https://wordpress.org/plugins/theme-check/) pluginPlugin A plugin is a piece of software containing a group of functions that can be added to a WordPress website. They can extend functionality or add new features to your WordPress websites. WordPress plugins are written in the PHP programming language and integrate seamlessly with WordPress. These can be free in the WordPress.org Plugin Directory https://wordpress.org/plugins/ or can be cost-based plugin from a third-party. You can find a full list of what it [checks here](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/ "Theme check plugin").
+Along with these checks you should also run the theme through the [Theme Check](https://wordpress.org/plugins/theme-check/) pluginPlugin A plugin is a piece of software containing a group of functions that can be added to a WordPress website. They can extend functionality or add new features to your WordPress websites. WordPress plugins are written in the PHP programming language and integrate seamlessly with WordPress. These can be free in the WordPress.org Plugin Directory https://wordpress.org/plugins/ or can be cost-based plugin from a third-party. You can find a full list of what it [checks here](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/).
 
 * * *
 
@@ -32,7 +32,7 @@ You can have multiple accounts with the following restrictions:
 
 ## AccessibilityAccessibility Accessibility (commonly shortened to a11y) refers to the design of products, devices, services, or environments for people with disabilities. The concept of accessible design ensures both “direct access” (i.e. unassisted) and “indirect access” meaning compatibility with a person’s assistive technology (for example, computer screen readers). (https://en.wikipedia.org/wiki/Accessibility)
 
-*   If the theme has the tag ‘accessibility-ready’ then it needs to meet [these requirements](https://make.wordpress.org/themes/handbook/review/accessibility/ "Accesibility").
+*   If the theme has the tag ‘accessibility-ready’ then it needs to meet [these requirements](https://make.wordpress.org/themes/handbook/review/accessibility/).
 
 ## Code
 
@@ -46,8 +46,9 @@ You can have multiple accounts with the following restrictions:
 
 ## Core Functionality and Features
 
-*   Use [WordPress functionality and features first, if available](https://developer.wordpress.org/themes/functionality/ "WordPress functionality and features").  
-    *If incorporated,* features must support the WordPress functionality:
+*   Use [WordPress functionality and features first, if available](https://developer.wordpress.org/themes/functionality/).  
+    *If incorporated,* features must support the WordPress functionality:  
+     
     *   [Automatic Feed Links](https://developer.wordpress.org/reference/functions/add_theme_support/#feed-links)
     *   [Sidebars](https://developer.wordpress.org/themes/functionality/sidebars/).
     *   [Navigation Menus](https://developer.wordpress.org/themes/functionality/navigation-menus/).
@@ -191,4 +192,4 @@ Screenshots are allowed to display only dummy text that doesn’t suggest/descri
 
 ***It’s worth noting we are working to automate a lot of the above requirements.***
 
-Along with the required items, you should also consider the ***[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/ "Recommended") ***The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.
+Along with the required items, you should also consider the ***[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/) ***The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.

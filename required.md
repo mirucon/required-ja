@@ -1,4 +1,4 @@
-Last modified: 2019-07-28T16:13:40
+Last modified: 2019-08-02T07:08:01
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -299,7 +299,7 @@ function theme_review_child_domain(){
 
 *   Themes **cannot include plugins**
 *   Themes **cannot require plugins** to work
-*   Themes **may recommend** plugins from WordPress.org or third-party sites (link to them as free or upsell plugins, GPL licensed only)
+*   Themes **may recommend** plugins from WordPress.org
 *   Themes may use [TGM Plugin Activation](http://tgmpluginactivation.com/) to recommend only plugins hosted on WordPress.org (by using `'required' => false` for each plugin)
 *   Themes **may include libraries** such as option frameworks (these must pass the requirements)
 

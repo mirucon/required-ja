@@ -1,4 +1,4 @@
-Last modified: 2019-08-02T07:08:01
+Last modified: 2019-08-06T02:02:19
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -136,15 +136,15 @@ Should be called in at least all singular views.
 
 ## Child themes
 
-*   Child themes must include more than minor changes (such as font and colour changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment)
+*   Child themes must include more than minor changes (such as font and colour changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment).
 
 ## Format of the readme.txt file
 
 The sample readme presented below is a living document. It may change in the future.
 
-*   The file header is required. There **must not be any empty lines in the file header**. Tested up to field should be present
-*   Right now, we share the [readme validator tool](https://wordpress.org/plugins/developers/readme-validator/) with plugins. Any warnings are required to be fixed, except for the *Stable tag* warning
-*   The other sections are optional, but we expect theme authors to **include a list of license and copyright information** somewhere in the theme: the resources section may be used for this purpose.
+*   The file header is required. There **must not be any empty lines in the file header**. Tested up to field should be present.
+*   Right now, we share the [readme validator tool](https://wordpress.org/plugins/developers/readme-validator/) with plugins. Any warnings are required to be fixed, except for the *Stable tag* warning.
+*   The other sections are optional, but we expect theme authors to **include a list of license and copyright information** somewhere in the theme: The resources section may be used for this purpose.
 
 #### Example
 
@@ -230,7 +230,7 @@ Default logo
 
 ## Documentation
 
-*   Any custom features, templates, options or any limitations (for example menu restrictions), should be explained. Enough documentation should be provided
+*   Any custom features, templates, options or any limitations (for example menu restrictions), should be explained. Enough documentation should be provided.
 
 ## Language
 
@@ -300,8 +300,9 @@ function theme_review_child_domain(){
 *   Themes **cannot include plugins**
 *   Themes **cannot require plugins** to work
 *   Themes **may recommend** plugins from WordPress.org
-*   Themes may use [TGM Plugin Activation](http://tgmpluginactivation.com/) to recommend only plugins hosted on WordPress.org (by using `'required' => false` for each plugin)
+*   Themes may only use [TGM Plugin Activation](http://tgmpluginactivation.com/) or similar libraries to recommend and install plugins that are hosted on WordPress.org (by using `'required' => false` for each plugin)
 *   Themes **may include libraries** such as option frameworks (these must pass the requirements)
+*   Themes **may recommend** GPL compatible plugins that are not hosted on WordPress.org in the readme file or the themes information page **but may not** include a direct link to the download for security reasons. You can link to the product page for the recommended plugin, but not directly to the download file.
 
 ## Screenshot
 

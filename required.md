@@ -1,4 +1,4 @@
-Last modified: 2019-10-05T17:16:51
+Last modified: 2019-10-19T05:12:14
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -480,6 +480,12 @@ That would print the `hide()` script inside script tags directly after the scrip
 *   Custom template files should be called using [`get_template_part()`](https://developer.wordpress.org/reference/functions/get_template_part/) or [`locate_template()`](https://developer.wordpress.org/reference/functions/locate_template/)
 *   Display the correct content according to the front page setting. ([See explanation](https://make.wordpress.org/themes/2014/06/28/correct-handling-of-static-front-page-and-custom-blog-posts-index-template/))
 
+* * *
+
 ***It’s worth noting we are working to automate a lot of the above requirements.***
 
 Along with the required items, you should also consider the ***[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/) ***The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.
+
+* * *
+
+Now that you have read and made sure that your theme follows all the requirements, you are welcome to [upload your theme](https://wordpress.org/themes/upload/).

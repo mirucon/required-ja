@@ -1,4 +1,4 @@
-Last modified: 2019-10-19T05:12:14
+Last modified: 2019-10-31T11:33:23
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -196,7 +196,7 @@ An answer to that question.
 ## Presentation vs Functionality
 
 *   The theme options should not be pseudo custom post types and save non-trivial user data
-*   Non-design related functionality is not allowed. (See: [Plugin territory examples](https://make.wordpress.org/themes/handbook/review/required/explanations-and-examples/#plugin-territory))
+*   Non-design related functionality is not allowed (See examples below).
 *   Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the `edit_theme_options` capability, not to visitors
 *   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated
 *   **Adding custom blocks for GutenbergGutenberg The Gutenberg project is the new Editor Interface for WordPress. The editor improves the process and experience of creating new content, making writing rich content much simpler. It uses ‘blocks’ to add richness rather than shortcodes, custom HTML etc. [https://wordpress.org/gutenberg/](https://wordpress.org/gutenberg/)** (the new text editor in WordPress) **is not allowed**. Use a companion plugin instead

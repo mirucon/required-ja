@@ -1,4 +1,4 @@
-Last modified: 2019-10-31T11:33:23
+Last modified: 2019-11-02T02:21:05
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -227,6 +227,22 @@ Default logo
 *   Themes are **not allowed to import content** to a user’s site
 *   Themes are **not allowed to link directly** to an XML, JSONJSON JSON, or JavaScript Object Notation, is a minimal, readable format for structuring data. It is used primarily to transmit data between a server and web application, as an alternative to XML., ZIP, or other files for direct download or import
 *   Themes are **not allowed to bundle demo content** via an XML, JSON, ZIP, or other files
+
+#### Examples
+
+**Examples of importing content**
+
+If you are using the [One Click Demo Import](https://wordpress.org/plugins/one-click-demo-import/) plugin, you can not use the setting where you link directly to the files. The following is not allowed, these are considered direct links:
+
+```
+'import_file_url'            => 'your-domain/demo.xml',
+'import_widget_file_url'     => 'https://raw.githubusercontent.com/your-username/repo/master/widgets.wie',
+'import_customizer_file_url' => 'your-domain/customizer.dat'
+```
+
+It does **not** make a difference to this requirement whether your files are placed on your domain, a demo site, or on GithubGitHub GitHub is a website that offers online implementation of git repositories that can can easily be shared, copied and modified by other developers. Public repositories are free to host, private repositories require a paid subscription. GitHub introduced the concept of the ‘pull request’ where code changes done in branches by contributors can be reviewed and discussed before being merged be the repository owner. [https://github.com/](https://github.com/).
+
+Similar settings in other plugins are not allowed either. You are still allowed to recommend the plugins without the settings.
 
 ## Documentation
 
@@ -459,6 +475,18 @@ function theme_review_add_inline_script() {
 ```
 
 That would print the `hide()` script inside script tags directly after the script with the handle ‘theme-review-script’ is printed in the head or footer.
+
+**What is considered an external resource**
+
+With external resources we mean **any** external resource including but limited to: Scripts, styles, images, apis, videos or feeds.
+
+You cannot publish your feed inside the theme, but you can link to it.
+
+You cannot present and show an external video, but you can link to it.
+
+You cannot load and present adverts, offers, or logos from your own website.
+
+You cannot use an external api to use for example Google maps or Instagram.
 
 ## Templates
 

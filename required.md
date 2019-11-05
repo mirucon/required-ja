@@ -1,4 +1,4 @@
-Last modified: 2019-11-02T02:21:05
+Last modified: 2019-11-05T04:49:41
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -478,7 +478,7 @@ That would print the `hide()` script inside script tags directly after the scrip
 
 **What is considered an external resource**
 
-With external resources we mean **any** external resource including but limited to: Scripts, styles, images, apis, videos or feeds.
+With external resources we mean **any** external resource including but not limited to: Scripts, styles, images, apis, videos or feeds.
 
 You cannot publish your feed inside the theme, but you can link to it.
 

@@ -1,4 +1,4 @@
-Last modified: 2019-11-05T04:49:41
+Last modified: 2019-11-16T19:11:10
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -220,7 +220,8 @@ Dashboard widgets in the admin area
 Custom Post Types and Shortcodes  
 Social media ‘like’, ‘follow’ and ‘share buttons’  
 Custom core editor (Gutenberg) blocks  
-Default logo
+Default logo  
+Session tampering
 
 ## Importing or Downloading
 
@@ -314,6 +315,7 @@ function theme_review_child_domain(){
 ## Plugins
 
 *   Themes **cannot include plugins**
+*   Themes **mustn’t add plugin functionalities**
 *   Themes **cannot require plugins** to work
 *   Themes **may recommend** plugins from WordPress.org
 *   Themes may only use [TGM Plugin Activation](http://tgmpluginactivation.com/) or similar libraries to recommend and install plugins that are hosted on WordPress.org (by using `'required' => false` for each plugin)

@@ -1,4 +1,4 @@
-Last modified: 2019-11-16T19:11:10
+Last modified: 2019-12-24T05:10:02
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -30,7 +30,9 @@ You can have multiple accounts with the following restrictions:
 
 ## AccessibilityAccessibility Accessibility (commonly shortened to a11y) refers to the design of products, devices, services, or environments for people with disabilities. The concept of accessible design ensures both “direct access” (i.e. unassisted) and “indirect access” meaning compatibility with a person’s assistive technology (for example, computer screen readers). (https://en.wikipedia.org/wiki/Accessibility)
 
-**Skip Links** – Themes must include a mechanism that enables users to navigate directly to content or navigation on entering any given page. These links may be positioned off-screen initially but must be available to screen reader users and must be visible on focus for sighted keyboard navigators.
+### Skip links
+
+Themes must include a mechanism that enables users to navigate directly to content or navigation on entering any given page. These links may be positioned off-screen initially but must be available to screen reader users and must be visible on focus for sighted keyboard navigators.
 
 A minimally conforming skip link must:
 
@@ -39,6 +41,14 @@ A minimally conforming skip link must:
 *   Move focus to the main content area of the page when activated
 
 Note that this only applies *if there is something to skip past,* such as a menu or larger headerHeader The header of your site is typically the first thing people will experience. The masthead or header art located across the top of your page is part of the look and feel of your website. It can influence a visitor’s opinion about your content and you/ your organization’s brand. It may also look different on different screen sizes. section or secondary widgetWidget A WordPress Widget is a small block that performs a specific function. You can add these widgets in sidebars also known as widget-ready areas on your web page. WordPress widgets were originally created to provide a simple and easy-to-use way of giving design and structure control of the WordPress theme to the user. area before the main content.
+
+### Keyboard navigation
+
+Theme authors must provide visual keyboard focus highlighting in navigation menus and for form fields, submit buttons and text links.
+
+All controls and links must be reachable using the keyboard. This includes responsive / mobile versions.
+
+See [https://make.wordpress.org/themes/handbook/review/accessibility/required/#keyboard-navigation](https://make.wordpress.org/themes/handbook/review/accessibility/required/#keyboard-navigation)
 
 If the theme has the tag ‘accessibility-ready’ then it needs to meet [these additional requirements](https://make.wordpress.org/themes/handbook/review/accessibility/).
 

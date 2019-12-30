@@ -1,4 +1,4 @@
-Last modified: 2019-12-24T05:10:02
+Last modified: 2019-12-30T02:13:26
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -442,7 +442,7 @@ function theme_review_styles() {
 
 That would print the content of the `$custom_css` variable inside style tags directly after the stylesheet with the handle ‘theme-style’ is printed in the head.
 
-**Enqueue scripts using** `**wp_enqueue_style**`
+**Enqueue scripts using** `**wp_enqueue_script**`
 
 The following example is not allowed:
 

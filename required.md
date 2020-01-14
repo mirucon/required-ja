@@ -1,4 +1,4 @@
-Last modified: 2019-12-30T02:13:26
+Last modified: 2020-01-13T16:41:03
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -148,12 +148,14 @@ Should be called in at least all singular views.
 
 *   Child themes must include more than minor changes (such as font and color changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment).
 
-## Format of the readme.txt file
+## Readme.txt file
+
+A readme.txt file is required.
 
 The sample readme presented below is a living document. It may change in the future.
 
 *   The file header is required. There **must not be any empty lines in the file header**. Tested up to field should be present.
-*   Right now, we share the [readme validator tool](https://wordpress.org/plugins/developers/readme-validator/) with plugins. Any warnings are required to be fixed, except for the *Stable tag* warning.
+*   Right now, we share the [readme validator tool](https://wordpress.org/plugins/developers/readme-validator/) with plugins. Warnings are required to be fixed, except for the *Stable tag* warning. Notes are not required to be fixed.
 *   The other sections are optional, but we expect theme authors to **include a list of license and copyright information** somewhere in the theme: The resources section may be used for this purpose.
 
 #### Example

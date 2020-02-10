@@ -1,4 +1,4 @@
-Last modified: 2020-01-13T16:41:03
+Last modified: 2020-02-03T12:29:00
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -68,7 +68,7 @@ Themes must support PHP7. This means there must be no PHP errors, warnings or n
 
 WordPress still supports lower PHP versions such as PHP 5.6 ([read more](https://wordpress.org/about/requirements/)). There should not be any PHP errors, warnings or notices if the theme is activated on a server with PHP 5.6.  Instead of downgrading the code to work for 5.6, the theme can include a PHP version check and deactivate the theme.
 
-**Have a valid DOCTYPE declaration and include language_attributes**
+**Have a valid DOCTYPE declaration and include language\_attributes**
 
 ```
 <!doctype html>
@@ -110,15 +110,14 @@ add_filter( 'show_admin_bar', '__return_false' );
     *   [Logo](https://developer.wordpress.org/themes/functionality/custom-logo/)
 *   Do not use features/APIs meant for WP Core use only e.g. [admin pointers](https://developer.wordpress.org/reference/classes/wp_internal_pointers/) and [private functions](https://codex.wordpress.org/Category:Private_Functions)
 *   **No paywall restricting any WordPress feature**
-*   **Avoid hard coding to modify content**. Instead, use function parameters, filters and action hooks where appropriate. For example, [wp_title](https://developer.wordpress.org/reference/functions/wp_title/) should be modified using a [filter](https://developer.wordpress.org/reference/hooks/wp_title/)
-*   Able to have child themes made from them. (Child themeChild theme A Child Theme is a customized theme based upon a Parent Theme. It’s considered best practice to create a child theme if you want to modify the CSS of your theme. [https://developer.wordpress.org/themes/advanced-topics/child-themes/](https://developer.wordpress.org/themes/advanced-topics/child-themes/). ready)
+*   **Avoid hard coding to modify content**. Instead, use function parameters, filters and action hooks where appropriate. For example, [wp\_title](https://developer.wordpress.org/reference/functions/wp_title/) should be modified using a [filter](https://developer.wordpress.org/reference/hooks/wp_title/)
 *   The [theme tags](https://make.wordpress.org/themes/handbook/review/required/theme-tags/) in style.css and description must match what the theme actually does in respect to functionality and design. **Don’t use more than 3 subject tags** (See: [Theme Tag List](https://make.wordpress.org/themes/handbook/review/required/theme-tags/))
-*   Use [template tags](https://codex.wordpress.org/Template_Tags) and action/filterFilter Filters are one of the two types of Hooks [https://codex.wordpress.org/Plugin_API/Hooks](https://codex.wordpress.org/Plugin_API/Hooks). They provide a way for functions to modify data of other functions. They are the counterpart to Actions. Unlike Actions, filters are meant to work in an isolated manner, and should never have side effects such as affecting global variables and output. hooks properly
-*   Include comments.php (via [comments_template()](https://codex.wordpress.org/Function_Reference/comments_template))
-*   Themes may be **backward compatible**, but **only for 3 major WordPress versions** (version 4.9 if 5.2 is latest)
+*   Use [template tags](https://codex.wordpress.org/Template_Tags) and action/filterFilter Filters are one of the two types of Hooks [https://codex.wordpress.org/Plugin\_API/Hooks](https://codex.wordpress.org/Plugin_API/Hooks). They provide a way for functions to modify data of other functions. They are the counterpart to Actions. Unlike Actions, filters are meant to work in an isolated manner, and should never have side effects such as affecting global variables and output. hooks properly
+*   Include comments.php (via [comments\_template()](https://codex.wordpress.org/Function_Reference/comments_template))
+*   Themes may be **backward compatible**, but **only for 3 major WordPress versions** (version 5.0 if 5.3 is latest)
 *   Themes **should not remove, hide, or otherwise blockBlock Block is the abstract term used to describe units of markup that, composed together, form the content or layout of a webpage using the WordPress editor. The idea combines concepts of what in the past may have achieved with shortcodes, custom HTML, and embed discovery into a single consistent API and user experience. the admin bar from appearing**
 *   **Core theme activation UXUX UX is an acronym for User Experience - the way the user uses the UI. Think ‘what they are doing’ and less about how they do it. should not be modified**. There should be no *redirect on activation* behavior
-*   All the notifications generated by a theme should use the admin_notices APIAPI An API or Application Programming Interface is a software intermediary that allows programs to interact with each other and share data in limited, clearly defined ways. and follow the core design pattern. They must be dismissible. Everything wrapped in the admin notice needs to follow core UIUI UI is an acronym for User Interface - the layout of the page the user interacts with. Think ‘how are they doing that’ and less about what they are doing. design for the notices
+*   All the notifications generated by a theme should use the admin\_notices APIAPI An API or Application Programming Interface is a software intermediary that allows programs to interact with each other and share data in limited, clearly defined ways. and follow the core design pattern. They must be dismissible. Everything wrapped in the admin notice needs to follow core UIUI UI is an acronym for User Interface - the layout of the page the user interacts with. Think ‘how are they doing that’ and less about what they are doing. design for the notices
 
 #### Examples
 
@@ -134,9 +133,9 @@ require_once( trailingslashit( get_template_directory() ) . 'inc/example.php' );
 require_once( trailingslashit( get_stylesheet_directory() ) . 'inc/example.php' );
 ```
 
-This example should come with an additional warning to check if the file exists first if not used in a child theme.
+This example should come with an additional warning to check if the file exists first if not used in a child themeChild theme A Child Theme is a customized theme based upon a Parent Theme. It’s considered best practice to create a child theme if you want to modify the CSS of your theme. [https://developer.wordpress.org/themes/advanced-topics/child-themes/](https://developer.wordpress.org/themes/advanced-topics/child-themes/)..
 
-**Include comments_template()**
+**Include comments\_template()**
 
 ```
 comments_template();
@@ -146,6 +145,7 @@ Should be called in at least all singular views.
 
 ## Child themes
 
+*   Themes must be able to have child themes made from them (Child theme ready).
 *   Child themes must include more than minor changes (such as font and color changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment).
 
 ## Readme.txt file
@@ -311,7 +311,7 @@ function theme_review_child_domain(){
 
 ## Naming
 
-*   Theme names **must not use**: WordPress, Theme, Twenty*
+*   Theme names **must not use**: WordPress, Theme, Twenty\*
 *   Child themes should not include the name of the parent theme unless the themes have the same author  
     This requirement was put in place in order to prevent theme names like “Twenty Sixteen Child” and to protect theme authors
 *   Spell “WordPress” correctly in all public-facing text: all one word, with both an uppercase W and P
@@ -525,8 +525,6 @@ You cannot use an external api to use for example Google maps or Instagram.
 * * *
 
 ***It’s worth noting we are working to automate a lot of the above requirements.***
-
-Along with the required items, you should also consider the ***[recommended items.](https://make.wordpress.org/themes/handbook/review/recommended/) ***The recommended items are there to make sure your theme is the best it can be and good advice to include as best practice.
 
 * * *
 

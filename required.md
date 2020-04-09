@@ -1,4 +1,4 @@
-Last modified: 2020-04-02T03:12:43
+Last modified: 2020-04-09T09:19:02
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -365,7 +365,7 @@ function theme_review_child_domain(){
 *   *Author URI is optional*. If used it is required to link to a page or website about the author, author theme shop, or author project/development website
 *   Themes may have a single footer credit link, which is restricted to the Theme URI or Author URI defined in style.css
 *   Themes may also have an additional footer credit link pointing to WordPress.org
-*   **Your site needs to state explicitly that the products you’re selling are GPL compatible**. It needs to be in an easy-to-find place for the reviewer and customers
+*   **Your site needs to state explicitly that the products you’re selling/distributing (free and paid) are GPL compatible**. It needs to be in an easy-to-find place for the reviewer and customers
 *   Themes should not display “obtrusive” upselling
 *   Themes are not allowed to have affiliate URLs or links
 

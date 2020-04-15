@@ -133,7 +133,7 @@ require_once( trailingslashit( get_template_directory() ) . 'inc/example.php' );
 require_once( trailingslashit( get_stylesheet_directory() ) . 'inc/example.php' );
 ```
 
-This example should come with an additional warning to check if the file exists first if not used in a child themeChild theme A Child Theme is a customized theme based upon a Parent Theme. It’s considered best practice to create a child theme if you want to modify the CSS of your theme. [https://developer.wordpress.org/themes/advanced-topics/child-themes/](https://developer.wordpress.org/themes/advanced-topics/child-themes/)..  
+This example should come with an additional warning to check if the file exists first if not used in a child themeChild theme A Child Theme is a customized theme based upon a Parent Theme. It’s considered best practice to create a child theme if you want to modify the CSS of your theme. [https://developer.wordpress.org/themes/advanced-topics/child-themes/](https://developer.wordpress.org/themes/advanced-topics/child-themes/)..
 
 **Include comments\_template()**
 
@@ -211,15 +211,13 @@ An answer to that question.
 *   Non-design related functionality is not allowed (See examples below).
 *   Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the `edit_theme_options` capability, not to visitors
 *   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated
-*   **Adding custom blocks for GutenbergGutenberg The Gutenberg project is the new Editor Interface for WordPress. The editor improves the process and experience of creating new content, making writing rich content much simpler. It uses ‘blocks’ to add richness rather than shortcodes, custom HTML etc. [https://wordpress.org/gutenberg/](https://wordpress.org/gutenberg/)** (the new text editor in WordPress) **is not allowed**. Use a companion plugin instead  
-    
+*   **Adding custom blocks for GutenbergGutenberg The Gutenberg project is the new Editor Interface for WordPress. The editor improves the process and experience of creating new content, making writing rich content much simpler. It uses ‘blocks’ to add richness rather than shortcodes, custom HTML etc. [https://wordpress.org/gutenberg/](https://wordpress.org/gutenberg/)** (the new text editor in WordPress) **is not allowed**. Use a companion plugin instead
 *   Placeholder/default images for posts without defined featured images **need to follow these rules**:
     *   be generic (solid color, gradient or patterns)
     *   they can’t display logos
     *   they can’t display text, only accepted form would be displaying the image size, `400x300px`
     *   icons are allowed as long as they are not logos. A good example is a `photo camera` icon
-    *   they need to be bundled within the theme, don’t use third-party placeholder services directly (e.g: `placeholder.com`).  
-        
+    *   they need to be bundled within the theme, don’t use third-party placeholder services directly (e.g: `placeholder.com`).
 
 #### Examples
 
@@ -376,29 +374,29 @@ function theme_review_child_domain(){
 The text domain should be generated from the theme slug.
 
 Notifications such as admin notices must be dismissible.  
-This means that the notices should not only be closed, but hidden permanently when the “Dismiss” link is closed.  
-  
-Only one sub-page in addition to the TGMPA plugin installation page is allowed under the Appearance section in the admin sidebar.  
-  
+This means that the notices should not only be closed, but hidden permanently when the “Dismiss” link is closed.
+
+Only one sub-page in addition to the TGMPA plugin installation page is allowed under the Appearance section in the admin sidebar.
+
 Only one link on the top level in the customizerCustomizer Tool built into WordPress core that hooks into most modern themes. You can use it to preview and modify many of your site’s appearance settings. is allowed. This must be done using the customizer API (no injecting via JavaScriptJavaScript JavaScript or JS is an object-oriented computer programming language commonly used to create interactive effects within web browsers. WordPress makes extensive use of JS for a better user experience. While PHP is executed on the server, JS executes within a user’s browser. [https://www.javascript.com/](https://www.javascript.com/).). [Example](https://github.com/justintadlock/trt-customizer-pro).  
-Further unobtrusive links are allowed in a separate section.  
-  
-No options or panels/sections can be locked behind a paywall.  
-  
+Further unobtrusive links are allowed in a separate section.
+
+No options or panels/sections can be locked behind a paywall.
+
 All settings in a theme must work.
 
 **As theme features for user social media**
 
-Social media links with icons settings are allowed.  
-  
-The simpler Social media sharing links that uses `sharer.php?` or similar **are allowed**.  
-  
+Social media links with icons settings are allowed.
+
+The simpler Social media sharing links that uses `sharer.php?` or similar **are allowed**.
+
 Social media “like” and “follow” buttons are **not allowed**.
 
 **Theme authors social media**
 
-Social media links **are allowed**.  
-  
+Social media links **are allowed**.
+
 Social media “like”, “follow” and “share” buttons are **not allowed**.
 
 ## Stylesheets and Scripts

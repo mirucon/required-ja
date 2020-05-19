@@ -1,4 +1,4 @@
-Last modified: 2020-05-14T09:41:29
+Last modified: 2020-05-19T11:29:14
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -148,6 +148,25 @@ Should be called in at least all singular views.
 
 *   Themes must be able to have child themes made from them (Child theme ready).
 *   Child themes must include more than minor changes (such as font and color changes) to the parent theme to be accepted. To make it easier on the reviewer, make sure you describe what modifications/features you did on top of the parent theme (in a ticket comment).
+
+## Main Stylesheet
+
+The headers in `style.css` should follow the guidelines and requirements for [the main stylesheet in the Theme Developer Handbook](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure). The following headers are required:
+
+Required headers
+
+```
+Theme Name: Name of the theme.
+Author: The name of the individual or organization who developed the theme. Using the Theme Author’s wordpress.org username is recommended.
+Description: A short description of the theme.
+Version: The version, written in X.X or X.X.X format.
+Requires at least: The oldest main WordPress version supported, written in X.X format. Themes are only required to support the three last versions.
+Tested up to: The last main WordPress version the theme has been tested up to, i.e. 5.4. Write only the number.
+Required PHP: The oldest PHP version supported, in X.X format, only the number
+License: The license of the theme.
+License URI: The URL of the theme license.
+Text Domain: The string used for textdomain for translation.
+```
 
 ## Readme.txt file
 

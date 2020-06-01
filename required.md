@@ -64,7 +64,7 @@ If the theme has the tag ‘accessibility-ready’ then it needs to meet [these 
 
 **No PHP errors, warnings or notices**
 
-Themes must support PHP7. This means there must be no PHP errors, warnings or notices when running on PHP7. 
+Themes must support PHP7. This means there must be no PHP errors, warnings or notices when running on PHP7. 
 
 WordPress still supports lower PHP versions such as PHP 5.6 ([read more](https://wordpress.org/about/requirements/)). There should not be any PHP errors, warnings or notices if the theme is activated on a server with PHP 5.6.  Instead of downgrading the code to work for 5.6, the theme can include a PHP version check and deactivate the theme.
 

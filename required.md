@@ -1,4 +1,4 @@
-Last modified: 2020-05-19T11:29:14
+Last modified: 2020-06-27T11:34:36
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -162,7 +162,7 @@ Description: A short description of the theme.
 Version: The version, written in X.X or X.X.X format.
 Requires at least: The oldest main WordPress version supported, written in X.X format. Themes are only required to support the three last versions.
 Tested up to: The last main WordPress version the theme has been tested up to, i.e. 5.4. Write only the number.
-Required PHP: The oldest PHP version supported, in X.X format, only the number
+Requires PHP: The oldest PHP version supported, in X.X format, only the number
 License: The license of the theme.
 License URI: The URL of the theme license.
 Text Domain: The string used for textdomain for translation.

@@ -1,4 +1,4 @@
-Last modified: 2020-06-27T11:34:36
+Last modified: 2020-08-02T07:07:18
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -383,9 +383,21 @@ function theme_review_child_domain(){
 *   *Author URI is optional*. If used it is required to link to a page or website about the author, author theme shop, or author project/development website
 *   Themes may have a single footer credit link, which is restricted to the Theme URI or Author URI defined in style.css
 *   Themes may also have an additional footer credit link pointing to WordPress.org
+
 *   **Your site needs to state explicitly that the products you’re selling/distributing (free and paid) are GPL compatible**. It needs to be in an easy-to-find place for the reviewer and customers
+
 *   Themes should not display “obtrusive” upselling
 *   Themes are not allowed to have affiliate URLs or links
+
+*   Themes can add a page under the Appearance menu using `add_theme_page`. If they need to have sub-pages (like for example documentation, FAQs, donation link etc), then they are allowed to use `add_menu_page` and `add_submenu_page`, provided they follow these requirements:
+    *   You can’t use `add_theme_page` and `add_menu_page` at the same time, choose one or the other.
+    *   You are allowed to **create only one (1)** main page using `add_menu_page`. The recommended maximum number of sub-menu pages (`add_submenu_page`) is three (3).
+    *   `add_submenu_page` must be used only on the page created using `add_menu_page`.
+    *   If you recommend plugins via TGMPA, you are required to use the `parent_slug` configuration option (this should be the top-level page’s slug).
+    *   Core UI patterns must be used. You are not allowed to style the menu & submenu page links in any way. The admin color scheme must remain the same.
+    *   Use only monochromatic icons. It must account for the admin color scheme.
+    *   The title must be kept short and not include spam.
+    *   Child themes are allowed to add one extra sub-page or remove the parent’s pages and add their own.
 
 #### Examples
 
@@ -418,6 +430,30 @@ Social media “like” and “follow” buttons are **not allowed**.
 Social media links **are allowed**.
 
 Social media “like”, “follow” and “share” buttons are **not allowed**.
+
+**add\_menu\_page priority code example**
+
+```
+function prefix_admin_menu() {
+	$menus = $GLOBALS[ 'menu' ];
+	$priority = array_filter( $menus, function( $item ) { 
+		return 'themes.php' === $item[2];
+	} );
+	$priority = ! empty( $priority ) && 1 === count( $priority ) ? key( $priority ) - 1 : null;
+
+	add_menu_page(
+		__( 'Theme Name Title', 'textdomain' ),
+		__( 'Theme Name', 'textdomain' ),
+
+		'edit_theme_options',
+		'theme-options.php',
+		'',
+		'dashicons-admin-customizer',
+		$priority
+	);
+}
+add_action( 'admin_menu', 'prefix_admin_menu' );
+```
 
 ## Stylesheets and Scripts
 

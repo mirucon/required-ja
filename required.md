@@ -1,4 +1,4 @@
-Last modified: 2020-08-02T07:07:18
+Last modified: 2020-08-24T10:21:12
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -393,6 +393,7 @@ function theme_review_child_domain(){
     *   You can’t use `add_theme_page` and `add_menu_page` at the same time, choose one or the other.
     *   You are allowed to **create only one (1)** main page using `add_menu_page`. The recommended maximum number of sub-menu pages (`add_submenu_page`) is three (3).
     *   `add_submenu_page` must be used only on the page created using `add_menu_page`.
+    *   The `$position` (priority) parameter must be `null` or only occupy the spot above the Appearance page (59). Check the code example on how to set the correct priority.
     *   If you recommend plugins via TGMPA, you are required to use the `parent_slug` configuration option (this should be the top-level page’s slug).
     *   Core UI patterns must be used. You are not allowed to style the menu & submenu page links in any way. The admin color scheme must remain the same.
     *   Use only monochromatic icons. It must account for the admin color scheme.

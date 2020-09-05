@@ -1,4 +1,4 @@
-Last modified: 2020-08-24T10:21:12
+Last modified: 2020-09-05T11:37:17
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -46,7 +46,8 @@ Note that this only applies *if there is something to skip past,* such as a menu
 
 Theme authors must provide visual keyboard focus highlighting in navigation menus and for form fields, submit buttons and text links.
 
-All controls and links must be reachable using the keyboard. All controls usable with the mouse must be usable with the keyboard. This includes responsive / mobile versions.
+All controls and links must be reachable using the keyboard.  
+All controls usable with the mouse must be usable with the keyboard, regardless of device and screen size. Including but not limited to responsive versions for small screens, mobile and other touch screen devices.
 
 See [https://make.wordpress.org/themes/handbook/review/accessibility/required/#keyboard-navigation](https://make.wordpress.org/themes/handbook/review/accessibility/required/#keyboard-navigation)
 

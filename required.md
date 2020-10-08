@@ -1,4 +1,4 @@
-Last modified: 2020-09-09T09:32:33
+Last modified: 2020-10-07T15:04:22
 
 A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
 
@@ -363,7 +363,7 @@ function theme_review_child_domain(){
 *   The screenshot should be no bigger than 1200 x 900px
 *   The ratio of width to height should be 4:3
 
-*   Screenshots are allowed to display only dummy text that doesn’t suggest/describe theme features, functionality, or statistics. If it looks like an AD, then it’s not allowed
+*   Screenshots are allowed to display only dummy text that doesn’t suggest/describe theme features, functionality, or statistics. If it looks like an advertisement, then it’s not allowed
 *   Dummy text examples: Lorem ipsum (or similar generators), text that doesn’t describe your theme, company, service, or products
 
 ## Privacy

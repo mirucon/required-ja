@@ -1,6 +1,6 @@
-Last modified: 2020-10-07T15:04:22
+Last modified: 2020-11-11T03:43:54
 
-A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) theme repository.
+A theme must meet all of the following requirements to be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) Theme Directory.
 
 Themes that have **3 or more distinct issues may be closed** as not-approved. However, theme authors may resubmit the theme once they’ve corrected the issues.
 
@@ -8,11 +8,15 @@ Along with these checks, you should also run the theme through the [Theme Check]
 
 * * *
 
+Note: Following the WordPress Coding Standards for [PHP](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/) and [JavaScript](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/) is **strongly recommended** and helps the Themes Team review your theme.  
+Several of the requirements listed on this page are also covered by the coding standards.
+
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 
 
 * * *
 
-Warning: **If you are a theme shop you should be selling under GPLGPL GPL is an acronym for GNU Public License. It is the standard license WordPress uses for Open Source licensing [https://wordpress.org/about/license/](https://wordpress.org/about/license/). The GPL is a ‘copyleft’ license [https://www.gnu.org/licenses/copyleft.en.html](https://www.gnu.org/licenses/copyleft.en.html). This means that derivative work can only be distributed under the same license terms. This is in distinction to permissive free software licenses, of which the BSD license and the MIT License are widely used examples.GPL GPL is an acronym for GNU Public License. It is the standard license WordPress uses for Open SourceOpen Source Open Source denotes software for which the original source code is made freely available and may be redistributed and modified. Open Source \*\*must be\*\* delivered via a licensing model, see GPL. licensing [https://wordpress.org/about/license/](https://wordpress.org/about/license/). The GPL is a ‘copyleft’ license [https://www.gnu.org/licenses/copyleft.en.html](https://www.gnu.org/licenses/copyleft.en.html). This means that derivative work can only be distributed under the same license terms. This is in distinction to permissive free software licenses, of which the BSD license and the MIT License are widely used examples. to be in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress coreCore Core is the set of software required to run WordPress. The Core Development Team builds WordPress., plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) repo** ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
+Warning: **If you are a theme shop you may only sell themes that are compatible with GPLGPL GPL is an acronym for GNU Public License. It is the standard license WordPress uses for Open Source licensing [https://wordpress.org/about/license/](https://wordpress.org/about/license/). The GPL is a ‘copyleft’ license [https://www.gnu.org/licenses/copyleft.en.html](https://www.gnu.org/licenses/copyleft.en.html). This means that derivative work can only be distributed under the same license terms. This is in distinction to permissive free software licenses, of which the BSD license and the MIT License are widely used examples.GPL GPL is an acronym for GNU Public License. It is the standard license WordPress uses for Open SourceOpen Source Open Source denotes software for which the original source code is made freely available and may be redistributed and modified. Open Source \*\*must be\*\* delivered via a licensing model, see GPL. licensing [https://wordpress.org/about/license/](https://wordpress.org/about/license/). The GPL is a ‘copyleft’ license [https://www.gnu.org/licenses/copyleft.en.html](https://www.gnu.org/licenses/copyleft.en.html). This means that derivative work can only be distributed under the same license terms. This is in distinction to permissive free software licenses, of which the BSD license and the MIT License are widely used examples..  
+Otherwise your theme can not be included in the WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress coreCore Core is the set of software required to run WordPress. The Core Development Team builds WordPress., plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) Theme Directory.** ([See explanation](https://make.wordpress.org/themes/2015/08/15/themes-should-be-100-gpl/)).
 
 Example: If you have a **Themeforest account** and you’re selling themes on it, all those themes need to state on their sales page that they are **100% GPL compatible** ([Info](https://help.market.envato.com/hc/en-us/articles/202501194-Theme-Plugin-Licensing-Options)).
 
@@ -20,13 +24,13 @@ Example: If you have a **Themeforest account** and you’re selling themes on it
 
 ## Multiple Theme Author Accounts
 
-Warning: **This is important,  so please read it carefully**
-
 You can have multiple accounts with the following restrictions:
 
 *   You can’t have more than one (1) open ticket in any of the tracTrac Trac is the place where contributors create issues for bugs or feature requests much like GitHub.[https://core.trac.wordpress.org/](https://core.trac.wordpress.org/). reports/queues or under review. That means you can’t have one (1) theme ticket from an account and another one from a secondary account, simultaneously open in any of the queues
 *   Failing to respect the above requirement will result in the closing of all tickets and not having the possibility to upload those themes again. Also, a 1 month no upload possibility for each ticket closed. Depending on the severity of the case, you might also end up with a permanent ban on all your accounts
 *   To avoid penalties, we request that you disclose all your accounts by emailing us at themes\[at\]wordpress.org
+
+* * *
 
 ## AccessibilityAccessibility Accessibility (commonly shortened to a11y) refers to the design of products, devices, services, or environments for people with disabilities. The concept of accessible design ensures both “direct access” (i.e. unassisted) and “indirect access” meaning compatibility with a person’s assistive technology (for example, computer screen readers). (https://en.wikipedia.org/wiki/Accessibility)
 
@@ -53,13 +57,22 @@ See [https://make.wordpress.org/themes/handbook/review/accessibility/required/#k
 
 If the theme has the tag ‘accessibility-ready’ then it needs to meet [these additional requirements](https://make.wordpress.org/themes/handbook/review/accessibility/).
 
+### Links within content must be underlined
+
+When links appear within a larger body of blockBlock Block is the abstract term used to describe units of markup that, composed together, form the content or layout of a webpage using the WordPress editor. The idea combines concepts of what in the past may have achieved with shortcodes, custom HTML, and embed discovery into a single consistent API and user experience.\-level content, they must be clearly distinguishable from surrounding content (Post content, comment content, text widgets, custom options with large blocks of texts).  
+Links in navigation-like contexts (e.g. menus, lists of upcoming posts in widgets, grouped post metaMeta Meta is a term that refers to the inside workings of a group. For us, this is the team that works on internal WordPress sites like WordCamp Central and Make WordPress. data) do not need to be specifically distinguished from surrounding content.
+
+The underline is the only accepted method of indicating links within content. Bold, italicized, or color-differentiated text is ambiguous and will not pass.
+
+See [https://make.wordpress.org/themes/handbook/review/accessibility/required/#content-links](https://make.wordpress.org/themes/handbook/review/accessibility/required/#content-links)
+
 ## Code
 
 *   **No PHPPHP PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML. [http://php.net/manual/en/intro-whatis.php](http://php.net/manual/en/intro-whatis.php). or JS notices**
 *   Validate and/or sanitize untrusted data before entering into the database. All untrusted data should be escaped before output. (See: [Data Validation](https://codex.wordpress.org/Data_Validation))
 *   No removing or modifying non-presentational hooksHooks In WordPress theme and development, hooks are functions that can be applied to an action or a Filter in WordPress. Actions are functions performed when a certain event occurs in WordPress. Filters allow you to modify certain functions. Arguments used to hook both filters and actions look the same..
 *   Must meet all [Theme Check requirements](https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/)
-*   Provide a [unique prefix](http://themereview.co/prefix-all-the-things/) for everything the Theme defines in the public namespace, including options, functions, global variables, constants, post metaMeta Meta is a term that refers to the inside workings of a group. For us, this is the team that works on internal WordPress sites like WordCamp Central and Make WordPress., `wp_enqueue_script/style` handle names, `add_image_size` names, `wp_script_add_data` keys, slugs/ids for new categories created with `register_block_pattern_category` etc. Theme nav menu locations and sidebarSidebar A sidebar in WordPress is referred to a widget-ready area used by WordPress themes to display information that is not a part of the main content. It is not always a vertical column on the side. It can be a horizontal rectangle below or above the content area, footer, header, or any where in the theme. IDs are exceptions
+*   Provide a [unique prefix](http://themereview.co/prefix-all-the-things/) for everything the Theme defines in the public namespace, including options, functions, global variables, constants, post meta, `wp_enqueue_script/style` handle names, `add_image_size` names, `wp_script_add_data` keys, slugs/ids for new categories created with `register_block_pattern_category` etc. Theme nav menu locations and sidebarSidebar A sidebar in WordPress is referred to a widget-ready area used by WordPress themes to display information that is not a part of the main content. It is not always a vertical column on the side. It can be a horizontal rectangle below or above the content area, footer, header, or any where in the theme. IDs are exceptions
 
 #### Examples
 
@@ -116,7 +129,7 @@ add_filter( 'show_admin_bar', '__return_false' );
 *   Use [template tags](https://codex.wordpress.org/Template_Tags) and action/filterFilter Filters are one of the two types of Hooks [https://codex.wordpress.org/Plugin\_API/Hooks](https://codex.wordpress.org/Plugin_API/Hooks). They provide a way for functions to modify data of other functions. They are the counterpart to Actions. Unlike Actions, filters are meant to work in an isolated manner, and should never have side effects such as affecting global variables and output. hooks properly
 *   Include comments.php (via [comments\_template()](https://codex.wordpress.org/Function_Reference/comments_template))
 *   Themes may be **backward compatible**, but **only for 3 major WordPress versions** (version 5.0 if 5.3 is latest)
-*   Themes **should not remove, hide, or otherwise blockBlock Block is the abstract term used to describe units of markup that, composed together, form the content or layout of a webpage using the WordPress editor. The idea combines concepts of what in the past may have achieved with shortcodes, custom HTML, and embed discovery into a single consistent API and user experience. the admin bar from appearing**
+*   Themes **should not remove, hide, or otherwise block the admin bar from appearing**
 *   **Core theme activation UXUX UX is an acronym for User Experience - the way the user uses the UI. Think ‘what they are doing’ and less about how they do it. should not be modified**. There should be no *redirect on activation* behavior
 *   All the notifications generated by a theme should use the admin\_notices APIAPI An API or Application Programming Interface is a software intermediary that allows programs to interact with each other and share data in limited, clearly defined ways. and follow the core design pattern. They must be dismissible. Everything wrapped in the admin notice needs to follow core UIUI UI is an acronym for User Interface - the layout of the page the user interacts with. Think ‘how are they doing that’ and less about what they are doing. design for the notices
 *   style.css must include in its header the `Requires PHP` and `Tested up to` fields.
@@ -176,6 +189,7 @@ A readme.txt file is required.
 The sample readme presented below is a living document. It may change in the future.
 
 *   The file header is required. There **must not be any empty lines in the file header**. Tested up to field should be present.
+*   Only one WordPress.org username can be listed in the contributors field.
 *   Right now, we share the [readme validator tool](https://wordpress.org/plugins/developers/readme-validator/) with plugins. Warnings are required to be fixed, except for the *Stable tag* warning. Notes are not required to be fixed.
 *   The other sections are optional, but we expect theme authors to **include a list of license and copyright information** somewhere in the theme: The resources section may be used for this purpose.
 
@@ -185,7 +199,7 @@ The sample readme presented below is a living document. It may change in the fut
 
 ```
 === Theme Name ===
-Contributors: (Should only contain WordPress.org usernames.)
+Contributors: (Should only contain one WordPress.org username.)
 Requires at least: 5.0
 Tested up to: 5.2
 Requires PHP: 5.6
@@ -228,10 +242,11 @@ An answer to that question.
 
 ## Presentation vs Functionality
 
+Warning: Showing preview/demo data or manipulating the preview on WordPress.orgWordPress.org The community site where WordPress code is created and shared by the users. This is where you can download the source code for WordPress core, plugins and themes as well as the central location for community conversations and organization. [https://wordpress.org/](https://wordpress.org/) is not allowed and can result in suspension or your user account being terminated.
+
 *   The theme options should not be pseudo custom post types and save non-trivial user data
 *   Non-design related functionality is not allowed (See examples below).
 *   Use [starter content](https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/), existing content, or installation instructions instead of placeholder content. Installation instructions should only be visible to users with the `edit_theme_options` capability, not to visitors
-*   Showing preview/demo data or manipulating the preview on WordPress.org is not allowed and can result in your user account being terminated
 *   **Adding custom blocks for GutenbergGutenberg The Gutenberg project is the new Editor Interface for WordPress. The editor improves the process and experience of creating new content, making writing rich content much simpler. It uses ‘blocks’ to add richness rather than shortcodes, custom HTML etc. [https://wordpress.org/gutenberg/](https://wordpress.org/gutenberg/)** (the new text editor in WordPress) **is not allowed**. Use a companion plugin instead
 *   Placeholder/default images for posts without defined featured images **need to follow these rules**:
     *   be generic (solid color, gradient or patterns)
@@ -288,7 +303,7 @@ Similar settings in other plugins are not allowed either. You are still allowed 
 *   Include a text-domain in `style.css`
 *   Use a single unique theme slug – as the theme slug appears in style.css. If the theme uses a framework then no more than 2 unique slugs (like `tgmpa`, `redux-framework`, `kirki` or some other allowed framework)
 *   Can use any language for text, but only use the same one for all text.
-*   If a theme author chooses to include a POT file in their theme it needs to be kept up to date with all translation strings
+*   **Language files are not required**. If a theme author chooses to include a POT file in their theme it needs to be kept up to date with all translation strings
 
 #### Examples
 
@@ -366,14 +381,14 @@ function theme_review_child_domain(){
 *   Screenshots are allowed to display only dummy text that doesn’t suggest/describe theme features, functionality, or statistics. If it looks like an advertisement, then it’s not allowed
 *   Dummy text examples: Lorem ipsum (or similar generators), text that doesn’t describe your theme, company, service, or products
 
+## Image guidelines
+
+*   Images that show children with recognizable facial or body features are not permitted.
+
 ## Privacy
 
 *   Don’t ‘phone home’ without informed user consent. Make any collection of user data “opt-in” only and have a theme option that is set to disabled by default
 *   No URLURL A specific web address of a website or web page on the Internet, such as a website’s URL www.wordpress.org shorteners used in the theme (`bit.ly`, `bit.do`, `goo.gl` etc.)
-
-## Image guidelines
-
-*   Images that show children with recognizable facial or body features are not permitted.
 
 ## Selling, credits, and links
 

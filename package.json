@@ -7,7 +7,7 @@
   "author": "Toshihiro Kanai <i@miruc.co>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "turndown": "^6.0.0"
   }
 }

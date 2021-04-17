@@ -8,7 +8,7 @@ Along with these checks, you should also run the theme through the [Theme Check]
 
 * * *
 
-Note: Following the WordPress Coding Standards for [PHP](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/) and [JavaScript](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/) is **strongly recommended** and helps the Themes Team review your theme.  
+Note: Following the WordPress Coding StandardsWordPress Coding Standards [A collection of PHP\_CodeSniffer rules](https://github.com/WordPress/WordPress-Coding-Standards/) (sniffs) to validate code developed for WordPress. It ensures code quality and adherence to coding conventions, especially [the official standards for WordPress Core](https://make.wordpress.org/core/handbook/best-practices/coding-standards/).WordPress Coding Standards [A collection of PHP\_CodeSniffer rules](https://github.com/WordPress/WordPress-Coding-Standards/) (sniffs) to validate code developed for WordPress. It ensures code quality and adherence to coding conventions, especially [the official standards for WordPress Core](https://make.wordpress.org/core/handbook/best-practices/coding-standards/). for [PHP](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/) and [JavaScript](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/) is **strongly recommended** and helps the Themes Team review your theme.  
 Several of the requirements listed on this page are also covered by the coding standards.
 
 Note: If you are getting started with your first reviews, please read [Become a reviewer](https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/). 

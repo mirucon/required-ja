@@ -48,9 +48,9 @@ asynckit@^0.4.0:
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
 axios@^1.0.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.14.0.tgz#7c29f4cf2ea91ef05018d5aa5399bf23ed3120eb"
-  integrity sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.15.0.tgz#0fcee91ef03d386514474904b27863b2c683bf4f"
+  integrity sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==
   dependencies:
     follow-redirects "^1.15.11"
     form-data "^4.0.5"
@@ -338,9 +338,9 @@ jsdom@^16.2.0:
     xml-name-validator "^3.0.0"
 
 lodash@^4.7.0:
-  version "4.17.23"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
-  integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.18.1.tgz#ff2b66c1f6326d59513de2407bf881439812771c"
+  integrity sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==
 
 math-intrinsics@^1.1.0:
   version "1.1.0"
